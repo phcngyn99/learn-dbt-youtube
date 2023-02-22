@@ -6,5 +6,5 @@ sources:
     database: shopkasatriavn # prj name
     schema: analytics_270502330 # dataset name
     tables:
-      - name: test
+      - name: dbt_demo
         description: 'Test data'
