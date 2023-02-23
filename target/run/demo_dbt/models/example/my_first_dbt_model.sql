@@ -2,7 +2,7 @@
   
     
 
-    create or replace table `shopkasatriavn`.`vnm_transfer_test`.`my_first_dbt_model`
+    create or replace table `shopkasatriavn`.`analytics_270502330`.`my_first_dbt_model`
     
     
     OPTIONS()

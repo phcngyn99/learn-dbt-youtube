@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: bigquery_ga4_shopkasatria # source name
+  - name: ga4_dbt # source name / table name
     description: 'Shopkasatria.vn GA4 Collected Data'
     database: shopkasatriavn # prj name
     schema: analytics_270502330 # dataset name
