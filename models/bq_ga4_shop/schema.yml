@@ -7,4 +7,4 @@ sources:
     schema: analytics_270502330 # dataset name
     tables:
       - name: dbt_demo #table name
-        description: 'Test data'
+        description: 'Test data, single day'

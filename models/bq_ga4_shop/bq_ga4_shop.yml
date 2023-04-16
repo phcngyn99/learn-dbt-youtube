@@ -1,0 +1,6 @@
+
+version: 2
+
+models:
+  - name: bq_ga4_shop
+    description: "Single day from GA4 tracking data"

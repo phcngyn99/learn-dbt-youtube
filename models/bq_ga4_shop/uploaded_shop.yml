@@ -1,0 +1,23 @@
+
+version: 2
+
+models:
+  - name: uploaded_shop
+    description: "Local uploaded csv file"
+    columns:
+      - name: col1
+        description: "Column number 1"
+        tests:
+          - unique
+          - not_null
+      - name: col2
+        description: "Column number 2"
+        tests:
+          - unique
+          - not_null
+      - name: col3
+        description: "Column number 3"
+        tests:
+          - unique
+          - not_null
+          - is_contains_3

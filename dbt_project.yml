@@ -34,7 +34,8 @@ models:
   demo_dbt:
     # Config indicated by + and applies to all files under models/example/
     example:
-      +materialized: view
+      +materialized: view #make it a view
+    # Config indicated by + and applies to all files under models/bq_ga4_shop/
     bq_ga4_shop:
-      +materialized: table
-      +schema: staging #default: schema name in schema.yml + name , custom: name only
+      +materialized: table #make it a table
+      +schema: staging #default: schema name in schema.yml + name , custom: name only, edit in marcos dir
