@@ -6,6 +6,10 @@ name: 'demo_dbt'
 version: '1.0.0'
 config-version: 2
 
+vars: #can be configured in both project.yml or on 
+      #command line : dbt run --var "{"number2":"2"}"  
+  numnber3: 3
+
 # This setting configures which "profile" dbt uses for this project.
 profile: 'demo_oauth_analytics_270502330' #Target dataset / destination
 # These configurations specify where dbt should look for different types of files.
