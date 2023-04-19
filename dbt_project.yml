@@ -27,6 +27,10 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
+#Hooks
+#on-run-start: "insert into  `shopkasatriavn.staging.dbt_audit`(audit_type) values('on-start');"
+on-run-start : "{{insert_audit('on-start')}}"
+on-run-end : "{{insert_audit('on-end')}}"
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -35,6 +39,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
+  pre-hook: "{{insert_audit('model-start')}}"
+  post-hook: "{{insert_audit('model-end')}}"
   demo_dbt:
     # Config indicated by + and applies to all files under models/example/
     example:

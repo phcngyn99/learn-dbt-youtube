@@ -1,10 +1,15 @@
 version: 2
 
 sources:
-  - name: ga4_dbt # source name / table name
+  - name: ga4_dbt # source name 
     description: 'Shopkasatria.vn GA4 Collected Data'
     database: shopkasatriavn # prj name
     schema: analytics_270502330 # dataset name
     tables:
       - name: dbt_demo #table name
         description: 'Test data, single day'
+  - name: ga4_dbt_staging
+    database: shopkasatriavn
+    schema: staging
+    tables:
+      - name: dbt_audit
