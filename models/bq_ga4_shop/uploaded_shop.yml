@@ -3,7 +3,7 @@ version: 2
 
 models:
   - name: uploaded_shop
-    description: "Local uploaded csv file"
+    description: '{{doc("uploaded_shop")}}'
     columns:
       - name: col1
         description: "Column number 1"
@@ -21,3 +21,6 @@ models:
           - unique
           - not_null
           - is_contains_3
+          
+  - name: uploaded_shop_contains_3
+    description: '{{doc("uploaded_shop_contains_3")}}'

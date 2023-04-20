@@ -16,5 +16,6 @@ validation_errors as(
         target_col = 3
 )
 
+/*default: if count > 0 then test failed */
 select count(*) from validation_errors
 
