@@ -17,4 +17,4 @@ sources:
           warn_after: { count: 24, period: hour }
           error_after: { count: 2, period: day}
           #filter sql
-        loaded_at_field: created_at #must be i UTC format
+        loaded_at_field: created_at #must be in UTC format

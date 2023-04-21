@@ -11333,3 +11333,526 @@ select
 [0m13:55:13.525912 [info ] [MainThread]: Done.
 [0m13:55:13.526494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108339f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10826c700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10826ceb0>]}
 [0m13:55:13.526865 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-21 04:47:52.627944 | c678d28e-39b8-42e3-9f4b-7ce42d9a753d ==============================
+[0m04:47:52.627944 [info ] [MainThread]: Running with dbt=1.4.5
+[0m04:47:52.629203 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/phuccnguyen99/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'select': ['state:new'], 'which': 'test', 'rpc_method': 'test'}
+[0m04:47:52.629327 [debug] [MainThread]: Tracking: tracking
+[0m04:47:52.639486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10988e190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10988ef70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10988e520>]}
+[0m04:47:52.651186 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m04:47:52.686127 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m04:47:52.686535 [debug] [MainThread]: Partial parsing: updated file: demo_dbt://models/bq_ga4_shop/schema.yml
+[0m04:47:52.698623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c678d28e-39b8-42e3-9f4b-7ce42d9a753d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b0b0d0>]}
+[0m04:47:52.703994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c678d28e-39b8-42e3-9f4b-7ce42d9a753d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a9a640>]}
+[0m04:47:52.704225 [info ] [MainThread]: Found 5 models, 11 tests, 0 snapshots, 0 analyses, 452 macros, 0 operations, 1 seed file, 2 sources, 0 exposures, 0 metrics
+[0m04:47:52.704399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c678d28e-39b8-42e3-9f4b-7ce42d9a753d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a9ae80>]}
+[0m04:47:52.704761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a9afd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a9af10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a9ae50>]}
+[0m04:47:52.704916 [debug] [MainThread]: Flushing usage events
+[0m04:47:54.218038 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Got a state selector method, but no comparison manifest
+
+
+============================== 2023-04-21 04:48:18.291856 | 1b9025de-249d-4664-a468-29899e1ac42e ==============================
+[0m04:48:18.291856 [info ] [MainThread]: Running with dbt=1.4.5
+[0m04:48:18.293190 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/phuccnguyen99/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'select': ['state:new'], 'which': 'test', 'rpc_method': 'test'}
+[0m04:48:18.293353 [debug] [MainThread]: Tracking: tracking
+[0m04:48:18.301465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aac0100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aac0d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aac0550>]}
+[0m04:48:18.312468 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m04:48:18.342572 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m04:48:18.342894 [debug] [MainThread]: Partial parsing: updated file: demo_dbt://models/bq_ga4_shop/uploaded_shop_contains_3.sql
+[0m04:48:18.352404 [debug] [MainThread]: 1603: static parser failed on bq_ga4_shop/uploaded_shop_contains_3.sql
+[0m04:48:18.359607 [debug] [MainThread]: 1602: parser fallback to jinja rendering on bq_ga4_shop/uploaded_shop_contains_3.sql
+[0m04:48:18.370261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1b9025de-249d-4664-a468-29899e1ac42e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad7d0d0>]}
+[0m04:48:18.374850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1b9025de-249d-4664-a468-29899e1ac42e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac97ee0>]}
+[0m04:48:18.375036 [info ] [MainThread]: Found 5 models, 11 tests, 0 snapshots, 0 analyses, 452 macros, 0 operations, 1 seed file, 2 sources, 0 exposures, 0 metrics
+[0m04:48:18.375211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1b9025de-249d-4664-a468-29899e1ac42e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac78490>]}
+[0m04:48:18.375550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10abdbbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10abdba30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10abdbb50>]}
+[0m04:48:18.375689 [debug] [MainThread]: Flushing usage events
+[0m04:48:19.628118 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Got a state selector method, but no comparison manifest
+
+
+============================== 2023-04-21 04:51:42.892277 | 93779162-cd01-4c05-bc7c-2423f70e895a ==============================
+[0m04:51:42.892277 [info ] [MainThread]: Running with dbt=1.4.5
+[0m04:51:42.893647 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/phuccnguyen99/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'parse_only': False, 'which': 'compile', 'rpc_method': 'compile', 'indirect_selection': 'eager'}
+[0m04:51:42.893876 [debug] [MainThread]: Tracking: tracking
+[0m04:51:42.906478 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c2ad00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c370d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c370a0>]}
+[0m04:51:42.918752 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m04:51:42.957378 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m04:51:42.957745 [debug] [MainThread]: Partial parsing: updated file: demo_dbt://models/bq_ga4_shop/uploaded_shop_contains_3.sql
+[0m04:51:42.968279 [debug] [MainThread]: 1603: static parser failed on bq_ga4_shop/uploaded_shop_contains_3.sql
+[0m04:51:42.976119 [debug] [MainThread]: 1602: parser fallback to jinja rendering on bq_ga4_shop/uploaded_shop_contains_3.sql
+[0m04:51:42.988827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '93779162-cd01-4c05-bc7c-2423f70e895a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109efb0d0>]}
+[0m04:51:42.994011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '93779162-cd01-4c05-bc7c-2423f70e895a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c51dc0>]}
+[0m04:51:42.994264 [info ] [MainThread]: Found 5 models, 11 tests, 0 snapshots, 0 analyses, 452 macros, 0 operations, 1 seed file, 2 sources, 0 exposures, 0 metrics
+[0m04:51:42.994444 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '93779162-cd01-4c05-bc7c-2423f70e895a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109df10d0>]}
+[0m04:51:42.995450 [info ] [MainThread]: 
+[0m04:51:42.996447 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m04:51:42.997525 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_shopkasatriavn_staging'
+[0m04:51:42.997984 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_shopkasatriavn_analytics_270502330'
+[0m04:51:42.998225 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:51:42.998387 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:51:44.760342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '93779162-cd01-4c05-bc7c-2423f70e895a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e11be0>]}
+[0m04:51:44.761024 [info ] [MainThread]: Concurrency: 7 threads (target='dev')
+[0m04:51:44.761250 [info ] [MainThread]: 
+[0m04:51:44.765024 [debug] [Thread-1  ]: Began running node model.demo_dbt.bq_ga4_shop
+[0m04:51:44.765217 [debug] [Thread-2  ]: Began running node model.demo_dbt.my_first_dbt_model
+[0m04:51:44.765458 [debug] [Thread-3  ]: Began running node seed.demo_dbt.uploaded
+[0m04:51:44.765938 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.demo_dbt.bq_ga4_shop'
+[0m04:51:44.766260 [debug] [Thread-2  ]: Acquiring new bigquery connection 'model.demo_dbt.my_first_dbt_model'
+[0m04:51:44.766609 [debug] [Thread-3  ]: Acquiring new bigquery connection 'seed.demo_dbt.uploaded'
+[0m04:51:44.766780 [debug] [Thread-1  ]: Began compiling node model.demo_dbt.bq_ga4_shop
+[0m04:51:44.766904 [debug] [Thread-2  ]: Began compiling node model.demo_dbt.my_first_dbt_model
+[0m04:51:44.767029 [debug] [Thread-3  ]: Began compiling node seed.demo_dbt.uploaded
+[0m04:51:44.769978 [debug] [Thread-1  ]: Writing injected SQL for node "model.demo_dbt.bq_ga4_shop"
+[0m04:51:44.771743 [debug] [Thread-2  ]: Writing injected SQL for node "model.demo_dbt.my_first_dbt_model"
+[0m04:51:44.772867 [debug] [Thread-3  ]: Timing info for seed.demo_dbt.uploaded (compile): 2023-04-21 04:51:44.771918 => 2023-04-21 04:51:44.772821
+[0m04:51:44.773189 [debug] [Thread-3  ]: Began executing node seed.demo_dbt.uploaded
+[0m04:51:44.773339 [debug] [Thread-3  ]: Timing info for seed.demo_dbt.uploaded (execute): 2023-04-21 04:51:44.773292 => 2023-04-21 04:51:44.773319
+[0m04:51:44.774358 [debug] [Thread-3  ]: Finished running node seed.demo_dbt.uploaded
+[0m04:51:44.774484 [debug] [Thread-2  ]: Timing info for model.demo_dbt.my_first_dbt_model (compile): 2023-04-21 04:51:44.770190 => 2023-04-21 04:51:44.774456
+[0m04:51:44.774709 [debug] [Thread-1  ]: Timing info for model.demo_dbt.bq_ga4_shop (compile): 2023-04-21 04:51:44.767145 => 2023-04-21 04:51:44.774689
+[0m04:51:44.774894 [debug] [Thread-5  ]: Began running node model.demo_dbt.uploaded_shop
+[0m04:51:44.775036 [debug] [Thread-6  ]: Began running node model.demo_dbt.uploaded_shop_contains_3
+[0m04:51:44.775158 [debug] [Thread-2  ]: Began executing node model.demo_dbt.my_first_dbt_model
+[0m04:51:44.775295 [debug] [Thread-1  ]: Began executing node model.demo_dbt.bq_ga4_shop
+[0m04:51:44.775601 [debug] [Thread-5  ]: Acquiring new bigquery connection 'model.demo_dbt.uploaded_shop'
+[0m04:51:44.775886 [debug] [Thread-6  ]: Acquiring new bigquery connection 'model.demo_dbt.uploaded_shop_contains_3'
+[0m04:51:44.776008 [debug] [Thread-2  ]: Timing info for model.demo_dbt.my_first_dbt_model (execute): 2023-04-21 04:51:44.775984 => 2023-04-21 04:51:44.775988
+[0m04:51:44.776115 [debug] [Thread-1  ]: Timing info for model.demo_dbt.bq_ga4_shop (execute): 2023-04-21 04:51:44.776097 => 2023-04-21 04:51:44.776100
+[0m04:51:44.776229 [debug] [Thread-5  ]: Began compiling node model.demo_dbt.uploaded_shop
+[0m04:51:44.776344 [debug] [Thread-6  ]: Began compiling node model.demo_dbt.uploaded_shop_contains_3
+[0m04:51:44.776667 [debug] [Thread-2  ]: Finished running node model.demo_dbt.my_first_dbt_model
+[0m04:51:44.776981 [debug] [Thread-1  ]: Finished running node model.demo_dbt.bq_ga4_shop
+[0m04:51:44.779363 [debug] [Thread-6  ]: Writing injected SQL for node "model.demo_dbt.uploaded_shop_contains_3"
+[0m04:51:44.781831 [debug] [Thread-4  ]: Began running node model.demo_dbt.my_second_dbt_model
+[0m04:51:44.781987 [debug] [Thread-3  ]: Began running node test.demo_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m04:51:44.782207 [debug] [Thread-7  ]: Began running node test.demo_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m04:51:44.782866 [debug] [Thread-4  ]: Acquiring new bigquery connection 'model.demo_dbt.my_second_dbt_model'
+[0m04:51:44.783251 [debug] [Thread-3  ]: Acquiring new bigquery connection 'test.demo_dbt.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m04:51:44.824500 [debug] [Thread-5  ]: Writing injected SQL for node "model.demo_dbt.uploaded_shop"
+[0m04:51:44.824980 [debug] [Thread-7  ]: Acquiring new bigquery connection 'test.demo_dbt.unique_my_first_dbt_model_id.16e066b321'
+[0m04:51:44.825106 [debug] [Thread-6  ]: Timing info for model.demo_dbt.uploaded_shop_contains_3 (compile): 2023-04-21 04:51:44.777625 => 2023-04-21 04:51:44.825074
+[0m04:51:44.825250 [debug] [Thread-4  ]: Began compiling node model.demo_dbt.my_second_dbt_model
+[0m04:51:44.825418 [debug] [Thread-3  ]: Began compiling node test.demo_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m04:51:44.825605 [debug] [Thread-7  ]: Began compiling node test.demo_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m04:51:44.825735 [debug] [Thread-6  ]: Began executing node model.demo_dbt.uploaded_shop_contains_3
+[0m04:51:44.827276 [debug] [Thread-4  ]: Writing injected SQL for node "model.demo_dbt.my_second_dbt_model"
+[0m04:51:44.833206 [debug] [Thread-5  ]: Timing info for model.demo_dbt.uploaded_shop (compile): 2023-04-21 04:51:44.777072 => 2023-04-21 04:51:44.833150
+[0m04:51:44.834242 [debug] [Thread-3  ]: Writing injected SQL for node "test.demo_dbt.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m04:51:44.837681 [debug] [Thread-7  ]: Writing injected SQL for node "test.demo_dbt.unique_my_first_dbt_model_id.16e066b321"
+[0m04:51:44.837867 [debug] [Thread-6  ]: Timing info for model.demo_dbt.uploaded_shop_contains_3 (execute): 2023-04-21 04:51:44.837831 => 2023-04-21 04:51:44.837839
+[0m04:51:44.838059 [debug] [Thread-5  ]: Began executing node model.demo_dbt.uploaded_shop
+[0m04:51:44.838245 [debug] [Thread-4  ]: Timing info for model.demo_dbt.my_second_dbt_model (compile): 2023-04-21 04:51:44.825830 => 2023-04-21 04:51:44.838220
+[0m04:51:44.838720 [debug] [Thread-6  ]: Finished running node model.demo_dbt.uploaded_shop_contains_3
+[0m04:51:44.838856 [debug] [Thread-3  ]: Timing info for test.demo_dbt.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 2023-04-21 04:51:44.827409 => 2023-04-21 04:51:44.838836
+[0m04:51:44.838974 [debug] [Thread-5  ]: Timing info for model.demo_dbt.uploaded_shop (execute): 2023-04-21 04:51:44.838949 => 2023-04-21 04:51:44.838953
+[0m04:51:44.839074 [debug] [Thread-7  ]: Timing info for test.demo_dbt.unique_my_first_dbt_model_id.16e066b321 (compile): 2023-04-21 04:51:44.834390 => 2023-04-21 04:51:44.839057
+[0m04:51:44.839196 [debug] [Thread-4  ]: Began executing node model.demo_dbt.my_second_dbt_model
+[0m04:51:44.839404 [debug] [Thread-3  ]: Began executing node test.demo_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m04:51:44.839722 [debug] [Thread-5  ]: Finished running node model.demo_dbt.uploaded_shop
+[0m04:51:44.839847 [debug] [Thread-7  ]: Began executing node test.demo_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m04:51:44.839952 [debug] [Thread-4  ]: Timing info for model.demo_dbt.my_second_dbt_model (execute): 2023-04-21 04:51:44.839932 => 2023-04-21 04:51:44.839935
+[0m04:51:44.840061 [debug] [Thread-3  ]: Timing info for test.demo_dbt.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 2023-04-21 04:51:44.840042 => 2023-04-21 04:51:44.840045
+[0m04:51:44.840325 [debug] [Thread-7  ]: Timing info for test.demo_dbt.unique_my_first_dbt_model_id.16e066b321 (execute): 2023-04-21 04:51:44.840307 => 2023-04-21 04:51:44.840310
+[0m04:51:44.840445 [debug] [Thread-1  ]: Began running node test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837
+[0m04:51:44.840560 [debug] [Thread-2  ]: Began running node test.demo_dbt.not_null_uploaded_shop_col1.22ad29cbfc
+[0m04:51:44.840667 [debug] [Thread-6  ]: Began running node test.demo_dbt.not_null_uploaded_shop_col2.092748c67a
+[0m04:51:44.840773 [debug] [Thread-5  ]: Began running node test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7
+[0m04:51:44.841080 [debug] [Thread-4  ]: Finished running node model.demo_dbt.my_second_dbt_model
+[0m04:51:44.841393 [debug] [Thread-3  ]: Finished running node test.demo_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m04:51:44.841695 [debug] [Thread-7  ]: Finished running node test.demo_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m04:51:44.841954 [debug] [Thread-1  ]: Acquiring new bigquery connection 'test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837'
+[0m04:51:44.842210 [debug] [Thread-2  ]: Acquiring new bigquery connection 'test.demo_dbt.not_null_uploaded_shop_col1.22ad29cbfc'
+[0m04:51:44.842459 [debug] [Thread-6  ]: Acquiring new bigquery connection 'test.demo_dbt.not_null_uploaded_shop_col2.092748c67a'
+[0m04:51:44.842702 [debug] [Thread-5  ]: Acquiring new bigquery connection 'test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7'
+[0m04:51:44.843058 [debug] [Thread-4  ]: Began running node test.demo_dbt.unique_uploaded_shop_col1.61569cd22d
+[0m04:51:44.843275 [debug] [Thread-3  ]: Began running node test.demo_dbt.unique_uploaded_shop_col2.a1aed08735
+[0m04:51:44.843460 [debug] [Thread-7  ]: Began running node test.demo_dbt.unique_uploaded_shop_col3.129c0297a7
+[0m04:51:44.843608 [debug] [Thread-1  ]: Began compiling node test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837
+[0m04:51:44.843729 [debug] [Thread-2  ]: Began compiling node test.demo_dbt.not_null_uploaded_shop_col1.22ad29cbfc
+[0m04:51:44.843837 [debug] [Thread-6  ]: Began compiling node test.demo_dbt.not_null_uploaded_shop_col2.092748c67a
+[0m04:51:44.843942 [debug] [Thread-5  ]: Began compiling node test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7
+[0m04:51:44.844193 [debug] [Thread-4  ]: Acquiring new bigquery connection 'test.demo_dbt.unique_uploaded_shop_col1.61569cd22d'
+[0m04:51:44.844483 [debug] [Thread-3  ]: Acquiring new bigquery connection 'test.demo_dbt.unique_uploaded_shop_col2.a1aed08735'
+[0m04:51:44.844741 [debug] [Thread-7  ]: Acquiring new bigquery connection 'test.demo_dbt.unique_uploaded_shop_col3.129c0297a7'
+[0m04:51:44.847535 [debug] [Thread-1  ]: Writing injected SQL for node "test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837"
+[0m04:51:44.849665 [debug] [Thread-2  ]: Writing injected SQL for node "test.demo_dbt.not_null_uploaded_shop_col1.22ad29cbfc"
+[0m04:51:44.852762 [debug] [Thread-6  ]: Writing injected SQL for node "test.demo_dbt.not_null_uploaded_shop_col2.092748c67a"
+[0m04:51:44.855089 [debug] [Thread-5  ]: Writing injected SQL for node "test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7"
+[0m04:51:44.855257 [debug] [Thread-4  ]: Began compiling node test.demo_dbt.unique_uploaded_shop_col1.61569cd22d
+[0m04:51:44.855389 [debug] [Thread-3  ]: Began compiling node test.demo_dbt.unique_uploaded_shop_col2.a1aed08735
+[0m04:51:44.855506 [debug] [Thread-7  ]: Began compiling node test.demo_dbt.unique_uploaded_shop_col3.129c0297a7
+[0m04:51:44.857826 [debug] [Thread-4  ]: Writing injected SQL for node "test.demo_dbt.unique_uploaded_shop_col1.61569cd22d"
+[0m04:51:44.857981 [debug] [Thread-2  ]: Timing info for test.demo_dbt.not_null_uploaded_shop_col1.22ad29cbfc (compile): 2023-04-21 04:51:44.847671 => 2023-04-21 04:51:44.857952
+[0m04:51:44.860036 [debug] [Thread-3  ]: Writing injected SQL for node "test.demo_dbt.unique_uploaded_shop_col2.a1aed08735"
+[0m04:51:44.860142 [debug] [Thread-6  ]: Timing info for test.demo_dbt.not_null_uploaded_shop_col2.092748c67a (compile): 2023-04-21 04:51:44.849814 => 2023-04-21 04:51:44.860120
+[0m04:51:44.860238 [debug] [Thread-1  ]: Timing info for test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837 (compile): 2023-04-21 04:51:44.844832 => 2023-04-21 04:51:44.860220
+[0m04:51:44.862425 [debug] [Thread-7  ]: Writing injected SQL for node "test.demo_dbt.unique_uploaded_shop_col3.129c0297a7"
+[0m04:51:44.862559 [debug] [Thread-5  ]: Timing info for test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7 (compile): 2023-04-21 04:51:44.852907 => 2023-04-21 04:51:44.862533
+[0m04:51:44.862770 [debug] [Thread-2  ]: Began executing node test.demo_dbt.not_null_uploaded_shop_col1.22ad29cbfc
+[0m04:51:44.862931 [debug] [Thread-4  ]: Timing info for test.demo_dbt.unique_uploaded_shop_col1.61569cd22d (compile): 2023-04-21 04:51:44.855887 => 2023-04-21 04:51:44.862915
+[0m04:51:44.863063 [debug] [Thread-6  ]: Began executing node test.demo_dbt.not_null_uploaded_shop_col2.092748c67a
+[0m04:51:44.863163 [debug] [Thread-3  ]: Timing info for test.demo_dbt.unique_uploaded_shop_col2.a1aed08735 (compile): 2023-04-21 04:51:44.858114 => 2023-04-21 04:51:44.863144
+[0m04:51:44.863280 [debug] [Thread-1  ]: Began executing node test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837
+[0m04:51:44.863439 [debug] [Thread-5  ]: Began executing node test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7
+[0m04:51:44.863569 [debug] [Thread-2  ]: Timing info for test.demo_dbt.not_null_uploaded_shop_col1.22ad29cbfc (execute): 2023-04-21 04:51:44.863547 => 2023-04-21 04:51:44.863553
+[0m04:51:44.863651 [debug] [Thread-7  ]: Timing info for test.demo_dbt.unique_uploaded_shop_col3.129c0297a7 (compile): 2023-04-21 04:51:44.860339 => 2023-04-21 04:51:44.863637
+[0m04:51:44.863761 [debug] [Thread-4  ]: Began executing node test.demo_dbt.unique_uploaded_shop_col1.61569cd22d
+[0m04:51:44.863873 [debug] [Thread-6  ]: Timing info for test.demo_dbt.not_null_uploaded_shop_col2.092748c67a (execute): 2023-04-21 04:51:44.863856 => 2023-04-21 04:51:44.863859
+[0m04:51:44.864040 [debug] [Thread-3  ]: Began executing node test.demo_dbt.unique_uploaded_shop_col2.a1aed08735
+[0m04:51:44.864216 [debug] [Thread-1  ]: Timing info for test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837 (execute): 2023-04-21 04:51:44.864193 => 2023-04-21 04:51:44.864197
+[0m04:51:44.864342 [debug] [Thread-5  ]: Timing info for test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7 (execute): 2023-04-21 04:51:44.864312 => 2023-04-21 04:51:44.864315
+[0m04:51:44.864774 [debug] [Thread-2  ]: Finished running node test.demo_dbt.not_null_uploaded_shop_col1.22ad29cbfc
+[0m04:51:44.864912 [debug] [Thread-7  ]: Began executing node test.demo_dbt.unique_uploaded_shop_col3.129c0297a7
+[0m04:51:44.865036 [debug] [Thread-4  ]: Timing info for test.demo_dbt.unique_uploaded_shop_col1.61569cd22d (execute): 2023-04-21 04:51:44.865014 => 2023-04-21 04:51:44.865017
+[0m04:51:44.865380 [debug] [Thread-6  ]: Finished running node test.demo_dbt.not_null_uploaded_shop_col2.092748c67a
+[0m04:51:44.865535 [debug] [Thread-3  ]: Timing info for test.demo_dbt.unique_uploaded_shop_col2.a1aed08735 (execute): 2023-04-21 04:51:44.865511 => 2023-04-21 04:51:44.865515
+[0m04:51:44.865938 [debug] [Thread-1  ]: Finished running node test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837
+[0m04:51:44.866246 [debug] [Thread-5  ]: Finished running node test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7
+[0m04:51:44.866413 [debug] [Thread-2  ]: Began running node test.demo_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m04:51:44.866581 [debug] [Thread-7  ]: Timing info for test.demo_dbt.unique_uploaded_shop_col3.129c0297a7 (execute): 2023-04-21 04:51:44.866557 => 2023-04-21 04:51:44.866561
+[0m04:51:44.866884 [debug] [Thread-4  ]: Finished running node test.demo_dbt.unique_uploaded_shop_col1.61569cd22d
+[0m04:51:44.867049 [debug] [Thread-6  ]: Began running node test.demo_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m04:51:44.867465 [debug] [Thread-3  ]: Finished running node test.demo_dbt.unique_uploaded_shop_col2.a1aed08735
+[0m04:51:44.867891 [debug] [Thread-2  ]: Acquiring new bigquery connection 'test.demo_dbt.not_null_my_second_dbt_model_id.151b76d778'
+[0m04:51:44.868233 [debug] [Thread-7  ]: Finished running node test.demo_dbt.unique_uploaded_shop_col3.129c0297a7
+[0m04:51:44.868578 [debug] [Thread-6  ]: Acquiring new bigquery connection 'test.demo_dbt.unique_my_second_dbt_model_id.57a0f8c493'
+[0m04:51:44.868757 [debug] [Thread-2  ]: Began compiling node test.demo_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m04:51:44.868979 [debug] [Thread-6  ]: Began compiling node test.demo_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m04:51:44.871531 [debug] [Thread-2  ]: Writing injected SQL for node "test.demo_dbt.not_null_my_second_dbt_model_id.151b76d778"
+[0m04:51:44.873716 [debug] [Thread-6  ]: Writing injected SQL for node "test.demo_dbt.unique_my_second_dbt_model_id.57a0f8c493"
+[0m04:51:44.874104 [debug] [Thread-2  ]: Timing info for test.demo_dbt.not_null_my_second_dbt_model_id.151b76d778 (compile): 2023-04-21 04:51:44.869107 => 2023-04-21 04:51:44.874060
+[0m04:51:44.874212 [debug] [Thread-6  ]: Timing info for test.demo_dbt.unique_my_second_dbt_model_id.57a0f8c493 (compile): 2023-04-21 04:51:44.871666 => 2023-04-21 04:51:44.874193
+[0m04:51:44.874344 [debug] [Thread-2  ]: Began executing node test.demo_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m04:51:44.874497 [debug] [Thread-6  ]: Began executing node test.demo_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m04:51:44.874623 [debug] [Thread-2  ]: Timing info for test.demo_dbt.not_null_my_second_dbt_model_id.151b76d778 (execute): 2023-04-21 04:51:44.874594 => 2023-04-21 04:51:44.874603
+[0m04:51:44.874737 [debug] [Thread-6  ]: Timing info for test.demo_dbt.unique_my_second_dbt_model_id.57a0f8c493 (execute): 2023-04-21 04:51:44.874716 => 2023-04-21 04:51:44.874719
+[0m04:51:44.875083 [debug] [Thread-2  ]: Finished running node test.demo_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m04:51:44.875423 [debug] [Thread-6  ]: Finished running node test.demo_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m04:51:44.875992 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:51:44.876105 [debug] [MainThread]: Connection 'test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837' was properly closed.
+[0m04:51:44.876195 [debug] [MainThread]: Connection 'test.demo_dbt.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+[0m04:51:44.876281 [debug] [MainThread]: Connection 'test.demo_dbt.unique_uploaded_shop_col2.a1aed08735' was properly closed.
+[0m04:51:44.876362 [debug] [MainThread]: Connection 'test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7' was properly closed.
+[0m04:51:44.876445 [debug] [MainThread]: Connection 'test.demo_dbt.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m04:51:44.876523 [debug] [MainThread]: Connection 'test.demo_dbt.unique_uploaded_shop_col1.61569cd22d' was properly closed.
+[0m04:51:44.876600 [debug] [MainThread]: Connection 'test.demo_dbt.unique_uploaded_shop_col3.129c0297a7' was properly closed.
+[0m04:51:44.877034 [debug] [MainThread]: Command end result
+[0m04:51:44.883533 [info ] [MainThread]: Done.
+[0m04:51:44.883872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e11c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e11bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109fca460>]}
+[0m04:51:44.884052 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-21 04:55:44.877730 | d837fe57-16fb-4d73-a58a-e100c6ef54a5 ==============================
+[0m04:55:44.877730 [info ] [MainThread]: Running with dbt=1.4.5
+[0m04:55:44.879054 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/phuccnguyen99/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'resource_types': [], 'output': 'selector', 'models': ['state:modified'], 'indirect_selection': 'eager', 'which': 'list'}
+[0m04:55:44.879184 [debug] [MainThread]: Tracking: tracking
+[0m04:55:44.889413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109635ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10964cb20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10964cbb0>]}
+[0m04:55:44.901500 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m04:55:44.935698 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:55:44.935876 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:55:44.939942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd837fe57-16fb-4d73-a58a-e100c6ef54a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1098610d0>]}
+[0m04:55:44.944996 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd837fe57-16fb-4d73-a58a-e100c6ef54a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10976c850>]}
+[0m04:55:44.945182 [info ] [MainThread]: Found 5 models, 11 tests, 0 snapshots, 0 analyses, 452 macros, 0 operations, 1 seed file, 2 sources, 0 exposures, 0 metrics
+[0m04:55:44.945330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd837fe57-16fb-4d73-a58a-e100c6ef54a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109635ee0>]}
+[0m04:55:44.945633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10976c2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10976c2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10976c280>]}
+[0m04:55:44.945754 [debug] [MainThread]: Flushing usage events
+[0m04:55:46.617914 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Got a state selector method, but no comparison manifest
+
+
+============================== 2023-04-21 04:56:56.670899 | f6fa831e-d0b0-45f7-85f0-0930490c2c01 ==============================
+[0m04:56:56.670899 [info ] [MainThread]: Running with dbt=1.4.5
+[0m04:56:56.672471 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/phuccnguyen99/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'parse_only': False, 'which': 'compile', 'rpc_method': 'compile', 'indirect_selection': 'eager'}
+[0m04:56:56.672634 [debug] [MainThread]: Tracking: tracking
+[0m04:56:56.683492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d3ecd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d4c070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d4c040>]}
+[0m04:56:56.694580 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m04:56:56.727290 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:56:56.727477 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:56:56.731684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f6fa831e-d0b0-45f7-85f0-0930490c2c01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1233900d0>]}
+[0m04:56:56.737039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f6fa831e-d0b0-45f7-85f0-0930490c2c01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123191670>]}
+[0m04:56:56.737244 [info ] [MainThread]: Found 5 models, 11 tests, 0 snapshots, 0 analyses, 452 macros, 0 operations, 1 seed file, 2 sources, 0 exposures, 0 metrics
+[0m04:56:56.737412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f6fa831e-d0b0-45f7-85f0-0930490c2c01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123191640>]}
+[0m04:56:56.738388 [info ] [MainThread]: 
+[0m04:56:56.739305 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m04:56:56.739976 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_shopkasatriavn_staging'
+[0m04:56:56.740319 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_shopkasatriavn_analytics_270502330'
+[0m04:56:56.740505 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:56:56.740630 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:56:58.414432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f6fa831e-d0b0-45f7-85f0-0930490c2c01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d4c970>]}
+[0m04:56:58.415622 [info ] [MainThread]: Concurrency: 7 threads (target='dev')
+[0m04:56:58.416060 [info ] [MainThread]: 
+[0m04:56:58.421492 [debug] [Thread-1  ]: Began running node model.demo_dbt.bq_ga4_shop
+[0m04:56:58.422287 [debug] [Thread-2  ]: Began running node model.demo_dbt.my_first_dbt_model
+[0m04:56:58.422569 [debug] [Thread-3  ]: Began running node seed.demo_dbt.uploaded
+[0m04:56:58.423243 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.demo_dbt.bq_ga4_shop'
+[0m04:56:58.423834 [debug] [Thread-2  ]: Acquiring new bigquery connection 'model.demo_dbt.my_first_dbt_model'
+[0m04:56:58.424456 [debug] [Thread-3  ]: Acquiring new bigquery connection 'seed.demo_dbt.uploaded'
+[0m04:56:58.424722 [debug] [Thread-1  ]: Began compiling node model.demo_dbt.bq_ga4_shop
+[0m04:56:58.424986 [debug] [Thread-2  ]: Began compiling node model.demo_dbt.my_first_dbt_model
+[0m04:56:58.425220 [debug] [Thread-3  ]: Began compiling node seed.demo_dbt.uploaded
+[0m04:56:58.429139 [debug] [Thread-1  ]: Writing injected SQL for node "model.demo_dbt.bq_ga4_shop"
+[0m04:56:58.431999 [debug] [Thread-2  ]: Writing injected SQL for node "model.demo_dbt.my_first_dbt_model"
+[0m04:56:58.433729 [debug] [Thread-3  ]: Timing info for seed.demo_dbt.uploaded (compile): 2023-04-21 04:56:58.432241 => 2023-04-21 04:56:58.433666
+[0m04:56:58.434213 [debug] [Thread-3  ]: Began executing node seed.demo_dbt.uploaded
+[0m04:56:58.434493 [debug] [Thread-3  ]: Timing info for seed.demo_dbt.uploaded (execute): 2023-04-21 04:56:58.434432 => 2023-04-21 04:56:58.434454
+[0m04:56:58.436304 [debug] [Thread-3  ]: Finished running node seed.demo_dbt.uploaded
+[0m04:56:58.436592 [debug] [Thread-1  ]: Timing info for model.demo_dbt.bq_ga4_shop (compile): 2023-04-21 04:56:58.425404 => 2023-04-21 04:56:58.436547
+[0m04:56:58.437123 [debug] [Thread-1  ]: Began executing node model.demo_dbt.bq_ga4_shop
+[0m04:56:58.437374 [debug] [Thread-5  ]: Began running node model.demo_dbt.uploaded_shop
+[0m04:56:58.437533 [debug] [Thread-2  ]: Timing info for model.demo_dbt.my_first_dbt_model (compile): 2023-04-21 04:56:58.429385 => 2023-04-21 04:56:58.437503
+[0m04:56:58.437772 [debug] [Thread-6  ]: Began running node model.demo_dbt.uploaded_shop_contains_3
+[0m04:56:58.437970 [debug] [Thread-1  ]: Timing info for model.demo_dbt.bq_ga4_shop (execute): 2023-04-21 04:56:58.437932 => 2023-04-21 04:56:58.437939
+[0m04:56:58.438504 [debug] [Thread-5  ]: Acquiring new bigquery connection 'model.demo_dbt.uploaded_shop'
+[0m04:56:58.438740 [debug] [Thread-2  ]: Began executing node model.demo_dbt.my_first_dbt_model
+[0m04:56:58.439232 [debug] [Thread-6  ]: Acquiring new bigquery connection 'model.demo_dbt.uploaded_shop_contains_3'
+[0m04:56:58.439768 [debug] [Thread-1  ]: Finished running node model.demo_dbt.bq_ga4_shop
+[0m04:56:58.439980 [debug] [Thread-5  ]: Began compiling node model.demo_dbt.uploaded_shop
+[0m04:56:58.440175 [debug] [Thread-2  ]: Timing info for model.demo_dbt.my_first_dbt_model (execute): 2023-04-21 04:56:58.440141 => 2023-04-21 04:56:58.440147
+[0m04:56:58.440360 [debug] [Thread-6  ]: Began compiling node model.demo_dbt.uploaded_shop_contains_3
+[0m04:56:58.442962 [debug] [Thread-5  ]: Writing injected SQL for node "model.demo_dbt.uploaded_shop"
+[0m04:56:58.443477 [debug] [Thread-2  ]: Finished running node model.demo_dbt.my_first_dbt_model
+[0m04:56:58.445756 [debug] [Thread-6  ]: Writing injected SQL for node "model.demo_dbt.uploaded_shop_contains_3"
+[0m04:56:58.446300 [debug] [Thread-4  ]: Began running node model.demo_dbt.my_second_dbt_model
+[0m04:56:58.446543 [debug] [Thread-3  ]: Began running node test.demo_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m04:56:58.446838 [debug] [Thread-7  ]: Began running node test.demo_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m04:56:58.447298 [debug] [Thread-4  ]: Acquiring new bigquery connection 'model.demo_dbt.my_second_dbt_model'
+[0m04:56:58.447456 [debug] [Thread-5  ]: Timing info for model.demo_dbt.uploaded_shop (compile): 2023-04-21 04:56:58.440599 => 2023-04-21 04:56:58.447423
+[0m04:56:58.447590 [debug] [Thread-6  ]: Timing info for model.demo_dbt.uploaded_shop_contains_3 (compile): 2023-04-21 04:56:58.443619 => 2023-04-21 04:56:58.447567
+[0m04:56:58.448017 [debug] [Thread-3  ]: Acquiring new bigquery connection 'test.demo_dbt.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m04:56:58.448435 [debug] [Thread-7  ]: Acquiring new bigquery connection 'test.demo_dbt.unique_my_first_dbt_model_id.16e066b321'
+[0m04:56:58.448630 [debug] [Thread-4  ]: Began compiling node model.demo_dbt.my_second_dbt_model
+[0m04:56:58.448813 [debug] [Thread-5  ]: Began executing node model.demo_dbt.uploaded_shop
+[0m04:56:58.448985 [debug] [Thread-6  ]: Began executing node model.demo_dbt.uploaded_shop_contains_3
+[0m04:56:58.449146 [debug] [Thread-3  ]: Began compiling node test.demo_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m04:56:58.449307 [debug] [Thread-7  ]: Began compiling node test.demo_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m04:56:58.451712 [debug] [Thread-4  ]: Writing injected SQL for node "model.demo_dbt.my_second_dbt_model"
+[0m04:56:58.451898 [debug] [Thread-5  ]: Timing info for model.demo_dbt.uploaded_shop (execute): 2023-04-21 04:56:58.451861 => 2023-04-21 04:56:58.451868
+[0m04:56:58.452067 [debug] [Thread-6  ]: Timing info for model.demo_dbt.uploaded_shop_contains_3 (execute): 2023-04-21 04:56:58.452033 => 2023-04-21 04:56:58.452039
+[0m04:56:58.461602 [debug] [Thread-3  ]: Writing injected SQL for node "test.demo_dbt.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m04:56:58.465726 [debug] [Thread-7  ]: Writing injected SQL for node "test.demo_dbt.unique_my_first_dbt_model_id.16e066b321"
+[0m04:56:58.466321 [debug] [Thread-5  ]: Finished running node model.demo_dbt.uploaded_shop
+[0m04:56:58.466788 [debug] [Thread-6  ]: Finished running node model.demo_dbt.uploaded_shop_contains_3
+[0m04:56:58.466919 [debug] [Thread-4  ]: Timing info for model.demo_dbt.my_second_dbt_model (compile): 2023-04-21 04:56:58.449429 => 2023-04-21 04:56:58.466887
+[0m04:56:58.467626 [debug] [Thread-3  ]: Timing info for test.demo_dbt.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 2023-04-21 04:56:58.452207 => 2023-04-21 04:56:58.467601
+[0m04:56:58.467823 [debug] [Thread-6  ]: Began running node test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837
+[0m04:56:58.467973 [debug] [Thread-2  ]: Began running node test.demo_dbt.not_null_uploaded_shop_col1.22ad29cbfc
+[0m04:56:58.468238 [debug] [Thread-1  ]: Began running node test.demo_dbt.not_null_uploaded_shop_col2.092748c67a
+[0m04:56:58.468385 [debug] [Thread-5  ]: Began running node test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7
+[0m04:56:58.468571 [debug] [Thread-4  ]: Began executing node model.demo_dbt.my_second_dbt_model
+[0m04:56:58.468676 [debug] [Thread-7  ]: Timing info for test.demo_dbt.unique_my_first_dbt_model_id.16e066b321 (compile): 2023-04-21 04:56:58.461809 => 2023-04-21 04:56:58.468658
+[0m04:56:58.468809 [debug] [Thread-3  ]: Began executing node test.demo_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m04:56:58.469108 [debug] [Thread-6  ]: Acquiring new bigquery connection 'test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837'
+[0m04:56:58.469394 [debug] [Thread-2  ]: Acquiring new bigquery connection 'test.demo_dbt.not_null_uploaded_shop_col1.22ad29cbfc'
+[0m04:56:58.469709 [debug] [Thread-1  ]: Acquiring new bigquery connection 'test.demo_dbt.not_null_uploaded_shop_col2.092748c67a'
+[0m04:56:58.470007 [debug] [Thread-5  ]: Acquiring new bigquery connection 'test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7'
+[0m04:56:58.470138 [debug] [Thread-4  ]: Timing info for model.demo_dbt.my_second_dbt_model (execute): 2023-04-21 04:56:58.470114 => 2023-04-21 04:56:58.470119
+[0m04:56:58.470271 [debug] [Thread-7  ]: Began executing node test.demo_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m04:56:58.470389 [debug] [Thread-3  ]: Timing info for test.demo_dbt.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 2023-04-21 04:56:58.470370 => 2023-04-21 04:56:58.470373
+[0m04:56:58.470516 [debug] [Thread-6  ]: Began compiling node test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837
+[0m04:56:58.470647 [debug] [Thread-2  ]: Began compiling node test.demo_dbt.not_null_uploaded_shop_col1.22ad29cbfc
+[0m04:56:58.470767 [debug] [Thread-1  ]: Began compiling node test.demo_dbt.not_null_uploaded_shop_col2.092748c67a
+[0m04:56:58.470892 [debug] [Thread-5  ]: Began compiling node test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7
+[0m04:56:58.471227 [debug] [Thread-4  ]: Finished running node model.demo_dbt.my_second_dbt_model
+[0m04:56:58.471358 [debug] [Thread-7  ]: Timing info for test.demo_dbt.unique_my_first_dbt_model_id.16e066b321 (execute): 2023-04-21 04:56:58.471334 => 2023-04-21 04:56:58.471338
+[0m04:56:58.471706 [debug] [Thread-3  ]: Finished running node test.demo_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m04:56:58.474734 [debug] [Thread-6  ]: Writing injected SQL for node "test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837"
+[0m04:56:58.476959 [debug] [Thread-2  ]: Writing injected SQL for node "test.demo_dbt.not_null_uploaded_shop_col1.22ad29cbfc"
+[0m04:56:58.479165 [debug] [Thread-1  ]: Writing injected SQL for node "test.demo_dbt.not_null_uploaded_shop_col2.092748c67a"
+[0m04:56:58.481380 [debug] [Thread-5  ]: Writing injected SQL for node "test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7"
+[0m04:56:58.481575 [debug] [Thread-4  ]: Began running node test.demo_dbt.unique_uploaded_shop_col1.61569cd22d
+[0m04:56:58.481956 [debug] [Thread-7  ]: Finished running node test.demo_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m04:56:58.482163 [debug] [Thread-3  ]: Began running node test.demo_dbt.unique_uploaded_shop_col2.a1aed08735
+[0m04:56:58.482969 [debug] [Thread-2  ]: Timing info for test.demo_dbt.not_null_uploaded_shop_col1.22ad29cbfc (compile): 2023-04-21 04:56:58.474868 => 2023-04-21 04:56:58.482939
+[0m04:56:58.483094 [debug] [Thread-1  ]: Timing info for test.demo_dbt.not_null_uploaded_shop_col2.092748c67a (compile): 2023-04-21 04:56:58.477082 => 2023-04-21 04:56:58.483072
+[0m04:56:58.483186 [debug] [Thread-6  ]: Timing info for test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837 (compile): 2023-04-21 04:56:58.471807 => 2023-04-21 04:56:58.483170
+[0m04:56:58.483511 [debug] [Thread-4  ]: Acquiring new bigquery connection 'test.demo_dbt.unique_uploaded_shop_col1.61569cd22d'
+[0m04:56:58.483692 [debug] [Thread-7  ]: Began running node test.demo_dbt.unique_uploaded_shop_col3.129c0297a7
+[0m04:56:58.483837 [debug] [Thread-5  ]: Timing info for test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7 (compile): 2023-04-21 04:56:58.479291 => 2023-04-21 04:56:58.483819
+[0m04:56:58.484098 [debug] [Thread-3  ]: Acquiring new bigquery connection 'test.demo_dbt.unique_uploaded_shop_col2.a1aed08735'
+[0m04:56:58.484226 [debug] [Thread-2  ]: Began executing node test.demo_dbt.not_null_uploaded_shop_col1.22ad29cbfc
+[0m04:56:58.484341 [debug] [Thread-1  ]: Began executing node test.demo_dbt.not_null_uploaded_shop_col2.092748c67a
+[0m04:56:58.484450 [debug] [Thread-6  ]: Began executing node test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837
+[0m04:56:58.484564 [debug] [Thread-4  ]: Began compiling node test.demo_dbt.unique_uploaded_shop_col1.61569cd22d
+[0m04:56:58.484827 [debug] [Thread-7  ]: Acquiring new bigquery connection 'test.demo_dbt.unique_uploaded_shop_col3.129c0297a7'
+[0m04:56:58.484946 [debug] [Thread-5  ]: Began executing node test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7
+[0m04:56:58.485063 [debug] [Thread-3  ]: Began compiling node test.demo_dbt.unique_uploaded_shop_col2.a1aed08735
+[0m04:56:58.485172 [debug] [Thread-2  ]: Timing info for test.demo_dbt.not_null_uploaded_shop_col1.22ad29cbfc (execute): 2023-04-21 04:56:58.485152 => 2023-04-21 04:56:58.485156
+[0m04:56:58.485274 [debug] [Thread-1  ]: Timing info for test.demo_dbt.not_null_uploaded_shop_col2.092748c67a (execute): 2023-04-21 04:56:58.485254 => 2023-04-21 04:56:58.485257
+[0m04:56:58.485374 [debug] [Thread-6  ]: Timing info for test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837 (execute): 2023-04-21 04:56:58.485359 => 2023-04-21 04:56:58.485361
+[0m04:56:58.488162 [debug] [Thread-4  ]: Writing injected SQL for node "test.demo_dbt.unique_uploaded_shop_col1.61569cd22d"
+[0m04:56:58.488314 [debug] [Thread-7  ]: Began compiling node test.demo_dbt.unique_uploaded_shop_col3.129c0297a7
+[0m04:56:58.488423 [debug] [Thread-5  ]: Timing info for test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7 (execute): 2023-04-21 04:56:58.488404 => 2023-04-21 04:56:58.488408
+[0m04:56:58.521902 [debug] [Thread-2  ]: Finished running node test.demo_dbt.not_null_uploaded_shop_col1.22ad29cbfc
+[0m04:56:58.522294 [debug] [Thread-1  ]: Finished running node test.demo_dbt.not_null_uploaded_shop_col2.092748c67a
+[0m04:56:58.522587 [debug] [Thread-6  ]: Finished running node test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837
+[0m04:56:58.526102 [debug] [Thread-3  ]: Writing injected SQL for node "test.demo_dbt.unique_uploaded_shop_col2.a1aed08735"
+[0m04:56:58.528305 [debug] [Thread-7  ]: Writing injected SQL for node "test.demo_dbt.unique_uploaded_shop_col3.129c0297a7"
+[0m04:56:58.528731 [debug] [Thread-5  ]: Finished running node test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7
+[0m04:56:58.528856 [debug] [Thread-4  ]: Timing info for test.demo_dbt.unique_uploaded_shop_col1.61569cd22d (compile): 2023-04-21 04:56:58.485454 => 2023-04-21 04:56:58.528831
+[0m04:56:58.529000 [debug] [Thread-2  ]: Began running node test.demo_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m04:56:58.529184 [debug] [Thread-1  ]: Began running node test.demo_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m04:56:58.529490 [debug] [Thread-3  ]: Timing info for test.demo_dbt.unique_uploaded_shop_col2.a1aed08735 (compile): 2023-04-21 04:56:58.488510 => 2023-04-21 04:56:58.529468
+[0m04:56:58.529662 [debug] [Thread-4  ]: Began executing node test.demo_dbt.unique_uploaded_shop_col1.61569cd22d
+[0m04:56:58.529749 [debug] [Thread-7  ]: Timing info for test.demo_dbt.unique_uploaded_shop_col3.129c0297a7 (compile): 2023-04-21 04:56:58.526281 => 2023-04-21 04:56:58.529732
+[0m04:56:58.530005 [debug] [Thread-2  ]: Acquiring new bigquery connection 'test.demo_dbt.not_null_my_second_dbt_model_id.151b76d778'
+[0m04:56:58.530250 [debug] [Thread-1  ]: Acquiring new bigquery connection 'test.demo_dbt.unique_my_second_dbt_model_id.57a0f8c493'
+[0m04:56:58.530361 [debug] [Thread-3  ]: Began executing node test.demo_dbt.unique_uploaded_shop_col2.a1aed08735
+[0m04:56:58.530464 [debug] [Thread-4  ]: Timing info for test.demo_dbt.unique_uploaded_shop_col1.61569cd22d (execute): 2023-04-21 04:56:58.530444 => 2023-04-21 04:56:58.530448
+[0m04:56:58.530567 [debug] [Thread-7  ]: Began executing node test.demo_dbt.unique_uploaded_shop_col3.129c0297a7
+[0m04:56:58.530671 [debug] [Thread-2  ]: Began compiling node test.demo_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m04:56:58.530773 [debug] [Thread-1  ]: Began compiling node test.demo_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m04:56:58.530883 [debug] [Thread-3  ]: Timing info for test.demo_dbt.unique_uploaded_shop_col2.a1aed08735 (execute): 2023-04-21 04:56:58.530866 => 2023-04-21 04:56:58.530869
+[0m04:56:58.531175 [debug] [Thread-4  ]: Finished running node test.demo_dbt.unique_uploaded_shop_col1.61569cd22d
+[0m04:56:58.531283 [debug] [Thread-7  ]: Timing info for test.demo_dbt.unique_uploaded_shop_col3.129c0297a7 (execute): 2023-04-21 04:56:58.531266 => 2023-04-21 04:56:58.531269
+[0m04:56:58.533470 [debug] [Thread-2  ]: Writing injected SQL for node "test.demo_dbt.not_null_my_second_dbt_model_id.151b76d778"
+[0m04:56:58.535441 [debug] [Thread-1  ]: Writing injected SQL for node "test.demo_dbt.unique_my_second_dbt_model_id.57a0f8c493"
+[0m04:56:58.535769 [debug] [Thread-3  ]: Finished running node test.demo_dbt.unique_uploaded_shop_col2.a1aed08735
+[0m04:56:58.536153 [debug] [Thread-7  ]: Finished running node test.demo_dbt.unique_uploaded_shop_col3.129c0297a7
+[0m04:56:58.536464 [debug] [Thread-2  ]: Timing info for test.demo_dbt.not_null_my_second_dbt_model_id.151b76d778 (compile): 2023-04-21 04:56:58.531363 => 2023-04-21 04:56:58.536443
+[0m04:56:58.536560 [debug] [Thread-1  ]: Timing info for test.demo_dbt.unique_my_second_dbt_model_id.57a0f8c493 (compile): 2023-04-21 04:56:58.533584 => 2023-04-21 04:56:58.536541
+[0m04:56:58.536681 [debug] [Thread-2  ]: Began executing node test.demo_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m04:56:58.536801 [debug] [Thread-1  ]: Began executing node test.demo_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m04:56:58.536906 [debug] [Thread-2  ]: Timing info for test.demo_dbt.not_null_my_second_dbt_model_id.151b76d778 (execute): 2023-04-21 04:56:58.536885 => 2023-04-21 04:56:58.536888
+[0m04:56:58.537010 [debug] [Thread-1  ]: Timing info for test.demo_dbt.unique_my_second_dbt_model_id.57a0f8c493 (execute): 2023-04-21 04:56:58.536993 => 2023-04-21 04:56:58.536996
+[0m04:56:58.537317 [debug] [Thread-2  ]: Finished running node test.demo_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m04:56:58.537616 [debug] [Thread-1  ]: Finished running node test.demo_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m04:56:58.538112 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:56:58.538213 [debug] [MainThread]: Connection 'test.demo_dbt.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m04:56:58.538296 [debug] [MainThread]: Connection 'test.demo_dbt.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+[0m04:56:58.538372 [debug] [MainThread]: Connection 'test.demo_dbt.unique_uploaded_shop_col2.a1aed08735' was properly closed.
+[0m04:56:58.538448 [debug] [MainThread]: Connection 'test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7' was properly closed.
+[0m04:56:58.538519 [debug] [MainThread]: Connection 'test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837' was properly closed.
+[0m04:56:58.538589 [debug] [MainThread]: Connection 'test.demo_dbt.unique_uploaded_shop_col1.61569cd22d' was properly closed.
+[0m04:56:58.538659 [debug] [MainThread]: Connection 'test.demo_dbt.unique_uploaded_shop_col3.129c0297a7' was properly closed.
+[0m04:56:58.539037 [debug] [MainThread]: Command end result
+[0m04:56:58.543735 [info ] [MainThread]: Done.
+[0m04:56:58.543972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1234eaf10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123390910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1234b2e50>]}
+[0m04:56:58.544131 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-21 04:58:03.562506 | a589ec26-b9b1-498d-a36d-c957cad290e0 ==============================
+[0m04:58:03.562506 [info ] [MainThread]: Running with dbt=1.4.5
+[0m04:58:03.563549 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/phuccnguyen99/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'resource_types': [], 'output': 'selector', 'models': ['state:modified'], 'indirect_selection': 'eager', 'state': '.', 'which': 'list'}
+[0m04:58:03.563662 [debug] [MainThread]: Tracking: tracking
+[0m04:58:03.572004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115180fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1150eecd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1150eed00>]}
+[0m04:58:03.582487 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m04:58:03.614433 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:58:03.614610 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:58:03.619052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a589ec26-b9b1-498d-a36d-c957cad290e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11542d0d0>]}
+[0m04:58:03.626245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a589ec26-b9b1-498d-a36d-c957cad290e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1151d4880>]}
+[0m04:58:03.626491 [info ] [MainThread]: Found 5 models, 11 tests, 0 snapshots, 0 analyses, 452 macros, 0 operations, 1 seed file, 2 sources, 0 exposures, 0 metrics
+[0m04:58:03.626690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a589ec26-b9b1-498d-a36d-c957cad290e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1151d4850>]}
+[0m04:58:03.627844 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1146da6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1151d4640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1151d45b0>]}
+[0m04:58:03.628019 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-21 04:58:30.919988 | 56eaeb0e-0e2c-4d17-8901-55b14d00323d ==============================
+[0m04:58:30.919988 [info ] [MainThread]: Running with dbt=1.4.5
+[0m04:58:30.921019 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/phuccnguyen99/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'resource_types': [], 'output': 'selector', 'models': ['state:modified'], 'indirect_selection': 'eager', 'state': '.', 'which': 'list'}
+[0m04:58:30.921138 [debug] [MainThread]: Tracking: tracking
+[0m04:58:30.928654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109cfcf70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c6abb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c6aca0>]}
+[0m04:58:30.939364 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m04:58:30.968634 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:58:30.968807 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:58:30.972963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '56eaeb0e-0e2c-4d17-8901-55b14d00323d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109eaa0d0>]}
+[0m04:58:30.977934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '56eaeb0e-0e2c-4d17-8901-55b14d00323d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d43820>]}
+[0m04:58:30.978131 [info ] [MainThread]: Found 5 models, 11 tests, 0 snapshots, 0 analyses, 452 macros, 0 operations, 1 seed file, 2 sources, 0 exposures, 0 metrics
+[0m04:58:30.978284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '56eaeb0e-0e2c-4d17-8901-55b14d00323d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d437f0>]}
+[0m04:58:30.979100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a565b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d435e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d43550>]}
+[0m04:58:30.979241 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-21 05:02:06.794960 | d261a732-2c5a-44e1-b9ad-fe44df84569d ==============================
+[0m05:02:06.794960 [info ] [MainThread]: Running with dbt=1.4.5
+[0m05:02:06.796009 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/phuccnguyen99/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'resource_types': [], 'output': 'selector', 'models': ['state::modified'], 'indirect_selection': 'eager', 'state': '.', 'which': 'list'}
+[0m05:02:06.796167 [debug] [MainThread]: Tracking: tracking
+[0m05:02:06.810214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a262a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a262dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a262d30>]}
+[0m05:02:06.821778 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m05:02:06.857166 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m05:02:06.857339 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m05:02:06.861526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd261a732-2c5a-44e1-b9ad-fe44df84569d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a40d0d0>]}
+[0m05:02:06.866841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd261a732-2c5a-44e1-b9ad-fe44df84569d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2ad2e0>]}
+[0m05:02:06.867046 [info ] [MainThread]: Found 5 models, 11 tests, 0 snapshots, 0 analyses, 452 macros, 0 operations, 1 seed file, 2 sources, 0 exposures, 0 metrics
+[0m05:02:06.867188 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd261a732-2c5a-44e1-b9ad-fe44df84569d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2ad2b0>]}
+[0m05:02:06.867546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3d2a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3d2cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3d2940>]}
+[0m05:02:06.867670 [debug] [MainThread]: Flushing usage events
+[0m05:02:08.135378 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Got an invalid selector ":modified", expected one of "['new', 'modified', 'modified.body', 'modified.configs', 'modified.persisted_descriptions', 'modified.relation', 'modified.macros']"
+
+
+============================== 2023-04-21 05:02:25.815128 | 73aab61e-7c53-4cce-aae4-8858db04a0a1 ==============================
+[0m05:02:25.815128 [info ] [MainThread]: Running with dbt=1.4.5
+[0m05:02:25.816151 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/phuccnguyen99/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'resource_types': [], 'output': 'selector', 'models': ['state::modified'], 'indirect_selection': 'eager', 'state': '.', 'which': 'list'}
+[0m05:02:25.816264 [debug] [MainThread]: Tracking: tracking
+[0m05:02:25.825796 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070b4250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070b4e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070b47f0>]}
+[0m05:02:25.837388 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m05:02:25.867257 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m05:02:25.867419 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m05:02:25.871436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '73aab61e-7c53-4cce-aae4-8858db04a0a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072ee0d0>]}
+[0m05:02:25.878767 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '73aab61e-7c53-4cce-aae4-8858db04a0a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10718dd60>]}
+[0m05:02:25.878969 [info ] [MainThread]: Found 5 models, 11 tests, 0 snapshots, 0 analyses, 452 macros, 0 operations, 1 seed file, 2 sources, 0 exposures, 0 metrics
+[0m05:02:25.879118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '73aab61e-7c53-4cce-aae4-8858db04a0a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10718dd30>]}
+[0m05:02:25.879470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10718d730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10718d6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10718d5e0>]}
+[0m05:02:25.879591 [debug] [MainThread]: Flushing usage events
+[0m05:02:27.025328 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Got an invalid selector ":modified", expected one of "['new', 'modified', 'modified.body', 'modified.configs', 'modified.persisted_descriptions', 'modified.relation', 'modified.macros']"
+
+
+============================== 2023-04-21 05:02:43.388569 | cf0daef9-f06f-43ec-994b-a9b63e9b8572 ==============================
+[0m05:02:43.388569 [info ] [MainThread]: Running with dbt=1.4.5
+[0m05:02:43.389687 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/phuccnguyen99/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'resource_types': [], 'output': 'selector', 'models': ['state:modified'], 'indirect_selection': 'eager', 'state': '.', 'which': 'list'}
+[0m05:02:43.389803 [debug] [MainThread]: Tracking: tracking
+[0m05:02:43.396451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10560c100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10560cd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10560c580>]}
+[0m05:02:43.406901 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m05:02:43.436279 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m05:02:43.436450 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m05:02:43.440497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cf0daef9-f06f-43ec-994b-a9b63e9b8572', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058bfd60>]}
+[0m05:02:43.445170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cf0daef9-f06f-43ec-994b-a9b63e9b8572', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057d39a0>]}
+[0m05:02:43.445355 [info ] [MainThread]: Found 5 models, 11 tests, 0 snapshots, 0 analyses, 452 macros, 0 operations, 1 seed file, 2 sources, 0 exposures, 0 metrics
+[0m05:02:43.445498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cf0daef9-f06f-43ec-994b-a9b63e9b8572', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057d3970>]}
+[0m05:02:43.446317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105468a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057d3760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057d36d0>]}
+[0m05:02:43.446460 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-21 05:03:21.374511 | 1c5c0916-3de5-441a-ac51-3c6c1d8670e1 ==============================
+[0m05:03:21.374511 [info ] [MainThread]: Running with dbt=1.4.5
+[0m05:03:21.375540 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/phuccnguyen99/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'resource_types': [], 'output': 'selector', 'models': ['state:modified'], 'indirect_selection': 'eager', 'state': '.', 'which': 'list'}
+[0m05:03:21.375656 [debug] [MainThread]: Tracking: tracking
+[0m05:03:21.382480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082b4100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082b4f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082b45e0>]}
+[0m05:03:21.393109 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m05:03:21.422397 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m05:03:21.422569 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m05:03:21.426593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1c5c0916-3de5-441a-ac51-3c6c1d8670e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1085610d0>]}
+[0m05:03:21.431255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1c5c0916-3de5-441a-ac51-3c6c1d8670e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108401220>]}
+[0m05:03:21.431451 [info ] [MainThread]: Found 5 models, 11 tests, 0 snapshots, 0 analyses, 452 macros, 0 operations, 1 seed file, 2 sources, 0 exposures, 0 metrics
+[0m05:03:21.431607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1c5c0916-3de5-441a-ac51-3c6c1d8670e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084011f0>]}
+[0m05:03:21.432394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108401370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084011f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108401070>]}
+[0m05:03:21.432534 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-21 05:04:13.776659 | 676c50d5-3c30-4bd7-b420-b2fa751c7e43 ==============================
+[0m05:04:13.776659 [info ] [MainThread]: Running with dbt=1.4.5
+[0m05:04:13.778037 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/phuccnguyen99/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['.'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m05:04:13.778168 [debug] [MainThread]: Tracking: tracking
+[0m05:04:13.785068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055f9f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105610b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105610bb0>]}
+[0m05:04:13.796105 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m05:04:13.826467 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m05:04:13.826650 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m05:04:13.830843 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '676c50d5-3c30-4bd7-b420-b2fa751c7e43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058260d0>]}
+[0m05:04:13.835586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '676c50d5-3c30-4bd7-b420-b2fa751c7e43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057268b0>]}
+[0m05:04:13.835777 [info ] [MainThread]: Found 5 models, 11 tests, 0 snapshots, 0 analyses, 452 macros, 0 operations, 1 seed file, 2 sources, 0 exposures, 0 metrics
+[0m05:04:13.835954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '676c50d5-3c30-4bd7-b420-b2fa751c7e43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055f9f40>]}
+[0m05:04:13.836431 [warn ] [MainThread]: The selection criterion '.' does not match any nodes
+[0m05:04:13.837010 [info ] [MainThread]: 
+[0m05:04:13.837272 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m05:04:13.837459 [debug] [MainThread]: Command end result
+[0m05:04:13.842018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105726310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105726370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105726340>]}
+[0m05:04:13.842344 [debug] [MainThread]: Flushing usage events
