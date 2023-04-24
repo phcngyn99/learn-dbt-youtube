@@ -1,3 +1,9 @@
+{{
+    config(
+        tags = ['test']
+    )
+}}
+
 with cte1 as (
     select * from {{ ref('uploaded')}}
 ),
