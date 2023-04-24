@@ -49,4 +49,6 @@ models:
     bq_ga4_shop:
       +materialized: table #make it a table
       +schema: staging #default: schema name in schema.yml + name , custom: name only, edit in marcos dir
-      +tags: p1 #priority 1
+      +tags: 
+        - p1 #priority 1
+        - shopkasatriavn
