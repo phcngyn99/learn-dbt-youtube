@@ -12748,3 +12748,183 @@ select * from cte2
 [0m14:49:09.109534 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
 [0m14:49:09.109814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c2adc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107bbee50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107bc9d30>]}
 [0m14:49:09.110032 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-24 14:52:27.129013 | fb538ff9-ef36-4d11-b7a7-5f9a91ee7df0 ==============================
+[0m14:52:27.129013 [info ] [MainThread]: Running with dbt=1.4.5
+[0m14:52:27.130742 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/phuccnguyen99/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'select': ['tag:test_contains'], 'which': 'test', 'rpc_method': 'test'}
+[0m14:52:27.130947 [debug] [MainThread]: Tracking: tracking
+[0m14:52:27.141319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e79100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e79d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e79610>]}
+[0m14:52:27.158520 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m14:52:27.204105 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m14:52:27.204677 [debug] [MainThread]: Partial parsing: updated file: demo_dbt://models/bq_ga4_shop/uploaded_shop.yml
+[0m14:52:27.218219 [debug] [MainThread]: 1603: static parser failed on bq_ga4_shop/uploaded_shop.sql
+[0m14:52:27.229540 [debug] [MainThread]: 1602: parser fallback to jinja rendering on bq_ga4_shop/uploaded_shop.sql
+[0m14:52:27.238711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1188fae80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118896be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118896f70>]}
+[0m14:52:27.239000 [debug] [MainThread]: Flushing usage events
+[0m14:52:29.044752 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid models config given in models/bq_ga4_shop/uploaded_shop.yml @ models: {'name': 'uploaded_shop', 'description': '{{doc("uploaded_shop")}}', 'columns': [{'name': 'col1', 'description': 'Column number 1', 'tests': ['unique', 'not_null']}, {'name': 'col2', 'description': 'Column number 2', 'tests': ['unique', 'not_null']}, {'name': 'col3', 'tags': 'test_contains', 'description': 'Column number 3', 'tests': ['unique', 'not_null', 'is_contains_3']}], 'original_file_path': 'models/bq_ga4_shop/uploaded_shop.yml', 'yaml_key': 'models', 'package_name': 'demo_dbt'} - at path ['columns'][2]['tags']: 'test_contains' is not of type 'array'
+
+
+============================== 2023-04-24 14:53:16.074596 | 67f5ee31-7990-459c-85e4-6998635d7f18 ==============================
+[0m14:53:16.074596 [info ] [MainThread]: Running with dbt=1.4.5
+[0m14:53:16.077667 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/phuccnguyen99/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'select': ['tag:test_contains'], 'which': 'test', 'rpc_method': 'test'}
+[0m14:53:16.077887 [debug] [MainThread]: Tracking: tracking
+[0m14:53:16.092399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106232100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106232d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106232640>]}
+[0m14:53:16.109174 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m14:53:16.155138 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m14:53:16.155733 [debug] [MainThread]: Partial parsing: updated file: demo_dbt://models/bq_ga4_shop/uploaded_shop.yml
+[0m14:53:16.169797 [debug] [MainThread]: 1603: static parser failed on bq_ga4_shop/uploaded_shop.sql
+[0m14:53:16.181395 [debug] [MainThread]: 1602: parser fallback to jinja rendering on bq_ga4_shop/uploaded_shop.sql
+[0m14:53:16.222304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '67f5ee31-7990-459c-85e4-6998635d7f18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064e00d0>]}
+[0m14:53:16.230046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '67f5ee31-7990-459c-85e4-6998635d7f18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064b96a0>]}
+[0m14:53:16.230365 [info ] [MainThread]: Found 5 models, 11 tests, 0 snapshots, 0 analyses, 452 macros, 0 operations, 1 seed file, 2 sources, 0 exposures, 0 metrics
+[0m14:53:16.230642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '67f5ee31-7990-459c-85e4-6998635d7f18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10640ac10>]}
+[0m14:53:16.231750 [info ] [MainThread]: 
+[0m14:53:16.233066 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:53:16.234188 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_shopkasatriavn_staging'
+[0m14:53:16.234849 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_shopkasatriavn_analytics_270502330'
+[0m14:53:16.235156 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:53:16.235379 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:53:17.676391 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '67f5ee31-7990-459c-85e4-6998635d7f18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10644b6d0>]}
+[0m14:53:17.677266 [info ] [MainThread]: Concurrency: 7 threads (target='dev')
+[0m14:53:17.677603 [info ] [MainThread]: 
+[0m14:53:17.681660 [debug] [Thread-1  ]: Began running node test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837
+[0m14:53:17.681952 [debug] [Thread-2  ]: Began running node test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7
+[0m14:53:17.682161 [debug] [Thread-3  ]: Began running node test.demo_dbt.unique_uploaded_shop_col3.129c0297a7
+[0m14:53:17.682520 [info ] [Thread-1  ]: 1 of 3 START test is_contains_3_uploaded_shop_col3 ............................. [RUN]
+[0m14:53:17.682810 [info ] [Thread-2  ]: 2 of 3 START test not_null_uploaded_shop_col3 .................................. [RUN]
+[0m14:53:17.683072 [info ] [Thread-3  ]: 3 of 3 START test unique_uploaded_shop_col3 .................................... [RUN]
+[0m14:53:17.683732 [debug] [Thread-1  ]: Acquiring new bigquery connection 'test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837'
+[0m14:53:17.684229 [debug] [Thread-2  ]: Acquiring new bigquery connection 'test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7'
+[0m14:53:17.684905 [debug] [Thread-3  ]: Acquiring new bigquery connection 'test.demo_dbt.unique_uploaded_shop_col3.129c0297a7'
+[0m14:53:17.685158 [debug] [Thread-1  ]: Began compiling node test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837
+[0m14:53:17.685389 [debug] [Thread-2  ]: Began compiling node test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7
+[0m14:53:17.685687 [debug] [Thread-3  ]: Began compiling node test.demo_dbt.unique_uploaded_shop_col3.129c0297a7
+[0m14:53:17.699792 [debug] [Thread-2  ]: Writing injected SQL for node "test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7"
+[0m14:53:17.705686 [debug] [Thread-3  ]: Writing injected SQL for node "test.demo_dbt.unique_uploaded_shop_col3.129c0297a7"
+[0m14:53:17.752643 [debug] [Thread-1  ]: Writing injected SQL for node "test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837"
+[0m14:53:17.753111 [debug] [Thread-2  ]: Timing info for test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7 (compile): 2023-04-24 14:53:17.691182 => 2023-04-24 14:53:17.753058
+[0m14:53:17.753309 [debug] [Thread-3  ]: Timing info for test.demo_dbt.unique_uploaded_shop_col3.129c0297a7 (compile): 2023-04-24 14:53:17.700083 => 2023-04-24 14:53:17.753281
+[0m14:53:17.753540 [debug] [Thread-2  ]: Began executing node test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7
+[0m14:53:17.753708 [debug] [Thread-1  ]: Timing info for test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837 (compile): 2023-04-24 14:53:17.685882 => 2023-04-24 14:53:17.753680
+[0m14:53:17.753901 [debug] [Thread-3  ]: Began executing node test.demo_dbt.unique_uploaded_shop_col3.129c0297a7
+[0m14:53:17.769573 [debug] [Thread-2  ]: Writing runtime sql for node "test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7"
+[0m14:53:17.769912 [debug] [Thread-1  ]: Began executing node test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837
+[0m14:53:17.772083 [debug] [Thread-3  ]: Writing runtime sql for node "test.demo_dbt.unique_uploaded_shop_col3.129c0297a7"
+[0m14:53:17.774202 [debug] [Thread-1  ]: Writing runtime sql for node "test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837"
+[0m14:53:17.774681 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m14:53:17.775161 [debug] [Thread-2  ]: On test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "demo_oauth_analytics_270502330", "target_name": "dev", "node_id": "test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select col3
+from `shopkasatriavn`.`staging`.`uploaded_shop`
+where col3 is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:53:17.775440 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m14:53:17.776445 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:53:17.776703 [debug] [Thread-3  ]: On test.demo_dbt.unique_uploaded_shop_col3.129c0297a7: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "demo_oauth_analytics_270502330", "target_name": "dev", "node_id": "test.demo_dbt.unique_uploaded_shop_col3.129c0297a7"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select col3 as unique_field
+  from `shopkasatriavn`.`staging`.`uploaded_shop`
+  where col3 is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:53:17.776916 [debug] [Thread-1  ]: On test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "demo_oauth_analytics_270502330", "target_name": "dev", "node_id": "test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+
+with validation as(
+    select 
+        col3 as target_col
+    from
+        `shopkasatriavn`.`staging`.`uploaded_shop`
+),
+
+validation_errors as(
+    select
+        target_col
+    from
+        validation
+    where
+        target_col = 3
+)
+
+/*default: if count > 0 then test failed */
+select count(*) from validation_errors
+
+
+      
+    ) dbt_internal_test
+[0m14:53:19.848869 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=shopkasatriavn&j=bq:US:be26475f-0064-4219-baf3-e8442b62929c&page=queryresults
+[0m14:53:19.852662 [debug] [Thread-1  ]: Timing info for test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837 (execute): 2023-04-24 14:53:17.772397 => 2023-04-24 14:53:19.852454
+[0m14:53:19.854953 [error] [Thread-1  ]: 1 of 3 FAIL 1 is_contains_3_uploaded_shop_col3 ................................. [[31mFAIL 1[0m in 2.17s]
+[0m14:53:19.858207 [debug] [Thread-1  ]: Finished running node test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837
+[0m14:53:19.867997 [debug] [Thread-2  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=shopkasatriavn&j=bq:US:a34193ff-b133-48b6-900c-93d0d15c232f&page=queryresults
+[0m14:53:19.868826 [debug] [Thread-2  ]: Timing info for test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7 (execute): 2023-04-24 14:53:17.754045 => 2023-04-24 14:53:19.868745
+[0m14:53:19.869762 [info ] [Thread-2  ]: 2 of 3 PASS not_null_uploaded_shop_col3 ........................................ [[32mPASS[0m in 2.19s]
+[0m14:53:19.870279 [debug] [Thread-2  ]: Finished running node test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7
+[0m14:53:20.211399 [debug] [Thread-3  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=shopkasatriavn&j=bq:US:74975e76-06f5-4663-81b7-d20cb169e652&page=queryresults
+[0m14:53:20.213167 [debug] [Thread-3  ]: Timing info for test.demo_dbt.unique_uploaded_shop_col3.129c0297a7 (execute): 2023-04-24 14:53:17.770101 => 2023-04-24 14:53:20.213019
+[0m14:53:20.214739 [info ] [Thread-3  ]: 3 of 3 PASS unique_uploaded_shop_col3 .......................................... [[32mPASS[0m in 2.53s]
+[0m14:53:20.215371 [debug] [Thread-3  ]: Finished running node test.demo_dbt.unique_uploaded_shop_col3.129c0297a7
+[0m14:53:20.217670 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:53:20.218756 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:53:20.219093 [debug] [MainThread]: Connection 'test.demo_dbt.is_contains_3_uploaded_shop_col3.f54766b837' was properly closed.
+[0m14:53:20.219350 [debug] [MainThread]: Connection 'test.demo_dbt.not_null_uploaded_shop_col3.0c7ad0fcc7' was properly closed.
+[0m14:53:20.219585 [debug] [MainThread]: Connection 'test.demo_dbt.unique_uploaded_shop_col3.129c0297a7' was properly closed.
+[0m14:53:20.219904 [info ] [MainThread]: 
+[0m14:53:20.220339 [info ] [MainThread]: Finished running 3 tests in 0 hours 0 minutes and 3.99 seconds (3.99s).
+[0m14:53:20.221002 [debug] [MainThread]: Command end result
+[0m14:53:20.235926 [info ] [MainThread]: 
+[0m14:53:20.236474 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m14:53:20.236824 [info ] [MainThread]: 
+[0m14:53:20.237172 [error] [MainThread]: [31mFailure in test is_contains_3_uploaded_shop_col3 (models/bq_ga4_shop/uploaded_shop.yml)[0m
+[0m14:53:20.237504 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m14:53:20.237823 [info ] [MainThread]: 
+[0m14:53:20.238143 [info ] [MainThread]:   compiled Code at target/compiled/demo_dbt/models/bq_ga4_shop/uploaded_shop.yml/is_contains_3_uploaded_shop_col3.sql
+[0m14:53:20.238475 [info ] [MainThread]: 
+[0m14:53:20.238793 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 TOTAL=3
+[0m14:53:20.239239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102507b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10660c0a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10660c7c0>]}
+[0m14:53:20.239576 [debug] [MainThread]: Flushing usage events

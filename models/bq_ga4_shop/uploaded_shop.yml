@@ -16,6 +16,8 @@ models:
           - unique
           - not_null
       - name: col3
+        tags:
+          - test_contains
         description: "Column number 3"
         tests:
           - unique
