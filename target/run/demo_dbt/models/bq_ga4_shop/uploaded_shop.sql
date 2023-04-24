@@ -11,6 +11,6 @@
     select * from `shopkasatriavn`.`analytics_270502330`.`uploaded`
 )
 
-select *, '45c573a1-6d72-4106-a67b-8498640d2785' as invocation_id from cte1
+select *, '54941680-aa30-4ab7-a378-cb658df0efb5' as invocation_id from cte1
     );
   

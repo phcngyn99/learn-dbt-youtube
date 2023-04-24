@@ -12114,3 +12114,379 @@ select *, '45c573a1-6d72-4106-a67b-8498640d2785' as invocation_id from cte1
 [0m14:25:27.684036 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
 [0m14:25:27.684377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109391100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10965cc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096eedc0>]}
 [0m14:25:27.684638 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-24 14:33:59.871689 | 0dde3749-e021-4bc3-816e-11ccb6d99f35 ==============================
+[0m14:33:59.871689 [info ] [MainThread]: Running with dbt=1.4.5
+[0m14:33:59.873233 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/phuccnguyen99/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'clean', 'indirect_selection': 'eager'}
+[0m14:33:59.873449 [debug] [MainThread]: Tracking: tracking
+[0m14:33:59.885298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10467b100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10467bd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10467b760>]}
+[0m14:33:59.895710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10467b730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10467b400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10467b0a0>]}
+[0m14:33:59.896009 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-24 14:35:23.548966 | d423bd3f-7792-4c62-a04f-95121524ee00 ==============================
+[0m14:35:23.548966 [info ] [MainThread]: Running with dbt=1.4.5
+[0m14:35:23.551365 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/phuccnguyen99/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['bq_ga4_shop'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m14:35:23.551636 [debug] [MainThread]: Tracking: tracking
+[0m14:35:23.561987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c6d100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c6dd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c6d580>]}
+[0m14:35:23.580645 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m14:35:23.581320 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:35:23.581614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd423bd3f-7792-4c62-a04f-95121524ee00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c6d070>]}
+[0m14:35:24.508188 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m14:35:24.519044 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m14:35:24.523732 [debug] [MainThread]: 1699: static parser successfully parsed bq_ga4_shop/bq_ga4_shop.sql
+[0m14:35:24.527843 [debug] [MainThread]: 1603: static parser failed on bq_ga4_shop/uploaded_shop.sql
+[0m14:35:24.531845 [debug] [MainThread]: 1602: parser fallback to jinja rendering on bq_ga4_shop/uploaded_shop.sql
+[0m14:35:24.533061 [debug] [MainThread]: 1603: static parser failed on bq_ga4_shop/uploaded_shop_contains_3.sql
+[0m14:35:24.537021 [debug] [MainThread]: 1602: parser fallback to jinja rendering on bq_ga4_shop/uploaded_shop_contains_3.sql
+[0m14:35:24.640884 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd423bd3f-7792-4c62-a04f-95121524ee00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f990a0>]}
+[0m14:35:24.648416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd423bd3f-7792-4c62-a04f-95121524ee00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105efcaf0>]}
+[0m14:35:24.648726 [info ] [MainThread]: Found 5 models, 11 tests, 0 snapshots, 0 analyses, 452 macros, 0 operations, 1 seed file, 2 sources, 0 exposures, 0 metrics
+[0m14:35:24.649025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd423bd3f-7792-4c62-a04f-95121524ee00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c95a00>]}
+[0m14:35:24.650205 [info ] [MainThread]: 
+[0m14:35:24.651587 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:35:24.652513 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_shopkasatriavn'
+[0m14:35:24.652911 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:35:26.235871 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_shopkasatriavn_staging'
+[0m14:35:26.236554 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_shopkasatriavn_analytics_270502330'
+[0m14:35:26.236913 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:35:26.237166 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:35:26.860650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd423bd3f-7792-4c62-a04f-95121524ee00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105efcdc0>]}
+[0m14:35:26.862037 [info ] [MainThread]: Concurrency: 7 threads (target='dev')
+[0m14:35:26.862555 [info ] [MainThread]: 
+[0m14:35:26.868242 [debug] [Thread-1  ]: Began running node model.demo_dbt.bq_ga4_shop
+[0m14:35:26.868680 [debug] [Thread-2  ]: Began running node model.demo_dbt.uploaded_shop
+[0m14:35:26.869193 [debug] [Thread-3  ]: Began running node model.demo_dbt.uploaded_shop_contains_3
+[0m14:35:26.869614 [info ] [Thread-1  ]: 1 of 3 START sql table model staging.bq_ga4_shop ............................... [RUN]
+[0m14:35:26.870164 [info ] [Thread-2  ]: 2 of 3 START sql table model staging.uploaded_shop ............................. [RUN]
+[0m14:35:26.870633 [info ] [Thread-3  ]: 3 of 3 START sql table model staging.uploaded_shop_contains_3 .................. [RUN]
+[0m14:35:26.871692 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.demo_dbt.bq_ga4_shop'
+[0m14:35:26.872464 [debug] [Thread-2  ]: Acquiring new bigquery connection 'model.demo_dbt.uploaded_shop'
+[0m14:35:26.873110 [debug] [Thread-3  ]: Acquiring new bigquery connection 'model.demo_dbt.uploaded_shop_contains_3'
+[0m14:35:26.873394 [debug] [Thread-1  ]: Began compiling node model.demo_dbt.bq_ga4_shop
+[0m14:35:26.873636 [debug] [Thread-2  ]: Began compiling node model.demo_dbt.uploaded_shop
+[0m14:35:26.873855 [debug] [Thread-3  ]: Began compiling node model.demo_dbt.uploaded_shop_contains_3
+[0m14:35:26.877718 [debug] [Thread-1  ]: Writing injected SQL for node "model.demo_dbt.bq_ga4_shop"
+[0m14:35:26.882126 [debug] [Thread-3  ]: Writing injected SQL for node "model.demo_dbt.uploaded_shop_contains_3"
+[0m14:35:26.891322 [debug] [Thread-2  ]: Writing injected SQL for node "model.demo_dbt.uploaded_shop"
+[0m14:35:26.891673 [debug] [Thread-3  ]: Timing info for model.demo_dbt.uploaded_shop_contains_3 (compile): 2023-04-24 14:35:26.878866 => 2023-04-24 14:35:26.891580
+[0m14:35:26.891889 [debug] [Thread-1  ]: Timing info for model.demo_dbt.bq_ga4_shop (compile): 2023-04-24 14:35:26.874035 => 2023-04-24 14:35:26.891849
+[0m14:35:26.892259 [debug] [Thread-3  ]: Began executing node model.demo_dbt.uploaded_shop_contains_3
+[0m14:35:26.892583 [debug] [Thread-1  ]: Began executing node model.demo_dbt.bq_ga4_shop
+[0m14:35:26.892791 [debug] [Thread-2  ]: Timing info for model.demo_dbt.uploaded_shop (compile): 2023-04-24 14:35:26.878024 => 2023-04-24 14:35:26.892754
+[0m14:35:26.906334 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m14:35:26.908263 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:35:26.908515 [debug] [Thread-2  ]: Began executing node model.demo_dbt.uploaded_shop
+[0m14:35:26.912158 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m14:35:27.480110 [debug] [Thread-3  ]: Writing runtime sql for node "model.demo_dbt.uploaded_shop_contains_3"
+[0m14:35:27.481684 [debug] [Thread-1  ]: Writing runtime sql for node "model.demo_dbt.bq_ga4_shop"
+[0m14:35:27.482895 [debug] [Thread-2  ]: Writing runtime sql for node "model.demo_dbt.uploaded_shop"
+[0m14:35:27.483864 [debug] [Thread-3  ]: On model.demo_dbt.uploaded_shop_contains_3: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "demo_oauth_analytics_270502330", "target_name": "dev", "node_id": "model.demo_dbt.uploaded_shop_contains_3"} */
+
+  
+    
+
+    create or replace table `shopkasatriavn`.`staging`.`uploaded_shop_contains_3`
+    
+    
+    OPTIONS()
+    as (
+      with cte1 as (
+    select * from `shopkasatriavn`.`analytics_270502330`.`uploaded`
+),
+
+cte2 as(
+    select 
+        col1,col2,col3,
+        if(cte1.col3 = CAST('3' as INT64), 'Yes','No') as is_contains_3
+    from
+        cte1
+
+)
+
+select * from cte2
+    );
+  
+[0m14:35:27.484128 [debug] [Thread-1  ]: On model.demo_dbt.bq_ga4_shop: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "demo_oauth_analytics_270502330", "target_name": "dev", "node_id": "model.demo_dbt.bq_ga4_shop"} */
+
+  
+    
+
+    create or replace table `shopkasatriavn`.`staging`.`bq_ga4_shop`
+    
+    
+    OPTIONS()
+    as (
+      -- create a view with configured source and destination in dbt_project.yml
+with shopkasatria_test as (
+    select * from `shopkasatriavn`.`analytics_270502330`.`dbt_demo`
+),
+final as (
+    select * from shopkasatria_test
+)
+
+select * from final
+    );
+  
+[0m14:35:27.484342 [debug] [Thread-2  ]: On model.demo_dbt.uploaded_shop: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "demo_oauth_analytics_270502330", "target_name": "dev", "node_id": "model.demo_dbt.uploaded_shop"} */
+
+  
+    
+
+    create or replace table `shopkasatriavn`.`staging`.`uploaded_shop`
+    
+    
+    OPTIONS()
+    as (
+      with cte1 as (
+    select * from `shopkasatriavn`.`analytics_270502330`.`uploaded`
+)
+
+select *, 'd423bd3f-7792-4c62-a04f-95121524ee00' as invocation_id from cte1
+    );
+  
+[0m14:35:30.710811 [debug] [Thread-2  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=shopkasatriavn&j=bq:US:3a940f57-1ca7-4445-b251-425022c426b0&page=queryresults
+[0m14:35:30.711721 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=shopkasatriavn&j=bq:US:44744646-ed36-4e7f-b4e5-1842f340eb76&page=queryresults
+[0m14:35:30.715368 [debug] [Thread-2  ]: On model.demo_dbt.uploaded_shop: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "demo_oauth_analytics_270502330", "target_name": "dev", "node_id": "model.demo_dbt.uploaded_shop"} */
+
+        insert into  `shopkasatriavn.staging.dbt_audit`(audit_type)
+    values('model-end');
+      
+[0m14:35:30.718168 [debug] [Thread-1  ]: On model.demo_dbt.bq_ga4_shop: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "demo_oauth_analytics_270502330", "target_name": "dev", "node_id": "model.demo_dbt.bq_ga4_shop"} */
+
+        insert into  `shopkasatriavn.staging.dbt_audit`(audit_type)
+    values('model-end');
+      
+[0m14:35:30.797918 [debug] [Thread-3  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=shopkasatriavn&j=bq:US:430096b7-224d-4d54-a463-8d66b5cd43cb&page=queryresults
+[0m14:35:30.800464 [debug] [Thread-3  ]: On model.demo_dbt.uploaded_shop_contains_3: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "demo_oauth_analytics_270502330", "target_name": "dev", "node_id": "model.demo_dbt.uploaded_shop_contains_3"} */
+
+        insert into  `shopkasatriavn.staging.dbt_audit`(audit_type)
+    values('model-end');
+      
+[0m14:35:33.178305 [debug] [Thread-3  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=shopkasatriavn&j=bq:US:e1dcb686-e81b-41cb-8a9c-006292ba9ebf&page=queryresults
+[0m14:35:33.180635 [debug] [Thread-2  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=shopkasatriavn&j=bq:US:3cd9c662-cc18-4cc1-a380-0855809b44a3&page=queryresults
+[0m14:35:33.188539 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=shopkasatriavn&j=bq:US:10cbb9bd-32d6-4927-8331-892fe8c32bda&page=queryresults
+[0m14:35:33.205656 [debug] [Thread-2  ]: Timing info for model.demo_dbt.uploaded_shop (execute): 2023-04-24 14:35:26.910148 => 2023-04-24 14:35:33.205599
+[0m14:35:33.207976 [debug] [Thread-3  ]: Timing info for model.demo_dbt.uploaded_shop_contains_3 (execute): 2023-04-24 14:35:26.893001 => 2023-04-24 14:35:33.207940
+[0m14:35:33.209223 [debug] [Thread-1  ]: Timing info for model.demo_dbt.bq_ga4_shop (execute): 2023-04-24 14:35:26.906556 => 2023-04-24 14:35:33.209190
+[0m14:35:33.209993 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd423bd3f-7792-4c62-a04f-95121524ee00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10600e9d0>]}
+[0m14:35:33.210585 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd423bd3f-7792-4c62-a04f-95121524ee00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10600edc0>]}
+[0m14:35:33.211139 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd423bd3f-7792-4c62-a04f-95121524ee00', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10600e5e0>]}
+[0m14:35:33.211564 [info ] [Thread-2  ]: 2 of 3 OK created sql table model staging.uploaded_shop ........................ [[32mCREATE TABLE (1.0 rows, 24.0 Bytes processed)[0m in 6.34s]
+[0m14:35:33.212054 [info ] [Thread-3  ]: 3 of 3 OK created sql table model staging.uploaded_shop_contains_3 ............. [[32mCREATE TABLE (1.0 rows, 24.0 Bytes processed)[0m in 6.34s]
+[0m14:35:33.212547 [info ] [Thread-1  ]: 1 of 3 OK created sql table model staging.bq_ga4_shop .......................... [[32mCREATE TABLE (56.0 rows, 50.5 KB processed)[0m in 6.34s]
+[0m14:35:33.214077 [debug] [Thread-2  ]: Finished running node model.demo_dbt.uploaded_shop
+[0m14:35:33.214398 [debug] [Thread-3  ]: Finished running node model.demo_dbt.uploaded_shop_contains_3
+[0m14:35:33.214649 [debug] [Thread-1  ]: Finished running node model.demo_dbt.bq_ga4_shop
+[0m14:35:33.216161 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:35:33.216674 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:35:33.216845 [debug] [MainThread]: Connection 'model.demo_dbt.bq_ga4_shop' was properly closed.
+[0m14:35:33.216993 [debug] [MainThread]: Connection 'model.demo_dbt.uploaded_shop' was properly closed.
+[0m14:35:33.217138 [debug] [MainThread]: Connection 'model.demo_dbt.uploaded_shop_contains_3' was properly closed.
+[0m14:35:33.217332 [info ] [MainThread]: 
+[0m14:35:33.217620 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 8.57 seconds (8.57s).
+[0m14:35:33.218044 [debug] [MainThread]: Command end result
+[0m14:35:33.226385 [info ] [MainThread]: 
+[0m14:35:33.226774 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:35:33.227094 [info ] [MainThread]: 
+[0m14:35:33.227347 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m14:35:33.227652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c6d670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ee6e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e4dc10>]}
+[0m14:35:33.227881 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-24 14:42:31.361218 | 50fa4f96-b841-46c5-818b-29d099c504d4 ==============================
+[0m14:42:31.361218 [info ] [MainThread]: Running with dbt=1.4.5
+[0m14:42:31.362982 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/phuccnguyen99/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['tag:p1'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m14:42:31.363216 [debug] [MainThread]: Tracking: tracking
+[0m14:42:31.376859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073f9100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073f9d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073f95e0>]}
+[0m14:42:31.393751 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m14:42:31.403870 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m14:42:31.404288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '50fa4f96-b841-46c5-818b-29d099c504d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073f9100>]}
+[0m14:42:32.187878 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m14:42:32.199165 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m14:42:32.203391 [debug] [MainThread]: 1699: static parser successfully parsed bq_ga4_shop/bq_ga4_shop.sql
+[0m14:42:32.207472 [debug] [MainThread]: 1603: static parser failed on bq_ga4_shop/uploaded_shop.sql
+[0m14:42:32.211382 [debug] [MainThread]: 1602: parser fallback to jinja rendering on bq_ga4_shop/uploaded_shop.sql
+[0m14:42:32.212551 [debug] [MainThread]: 1603: static parser failed on bq_ga4_shop/uploaded_shop_contains_3.sql
+[0m14:42:32.216558 [debug] [MainThread]: 1602: parser fallback to jinja rendering on bq_ga4_shop/uploaded_shop_contains_3.sql
+[0m14:42:32.322025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '50fa4f96-b841-46c5-818b-29d099c504d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077eb0d0>]}
+[0m14:42:32.329329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '50fa4f96-b841-46c5-818b-29d099c504d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075155b0>]}
+[0m14:42:32.329611 [info ] [MainThread]: Found 5 models, 11 tests, 0 snapshots, 0 analyses, 452 macros, 0 operations, 1 seed file, 2 sources, 0 exposures, 0 metrics
+[0m14:42:32.329874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '50fa4f96-b841-46c5-818b-29d099c504d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107517220>]}
+[0m14:42:32.330441 [warn ] [MainThread]: The selection criterion 'tag:p1' does not match any nodes
+[0m14:42:32.331206 [info ] [MainThread]: 
+[0m14:42:32.331605 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m14:42:32.331875 [debug] [MainThread]: Command end result
+[0m14:42:32.338536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10724a100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107700f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107515e50>]}
+[0m14:42:32.338819 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-24 14:43:15.459655 | 54941680-aa30-4ab7-a378-cb658df0efb5 ==============================
+[0m14:43:15.459655 [info ] [MainThread]: Running with dbt=1.4.5
+[0m14:43:15.461495 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/phuccnguyen99/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['tag:p1'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m14:43:15.461828 [debug] [MainThread]: Tracking: tracking
+[0m14:43:15.472587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3ac100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3acd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3ac790>]}
+[0m14:43:15.488791 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m14:43:15.499146 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m14:43:15.499525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '54941680-aa30-4ab7-a378-cb658df0efb5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3ac580>]}
+[0m14:43:16.279113 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m14:43:16.290133 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m14:43:16.294339 [debug] [MainThread]: 1699: static parser successfully parsed bq_ga4_shop/bq_ga4_shop.sql
+[0m14:43:16.298594 [debug] [MainThread]: 1603: static parser failed on bq_ga4_shop/uploaded_shop.sql
+[0m14:43:16.302530 [debug] [MainThread]: 1602: parser fallback to jinja rendering on bq_ga4_shop/uploaded_shop.sql
+[0m14:43:16.303724 [debug] [MainThread]: 1603: static parser failed on bq_ga4_shop/uploaded_shop_contains_3.sql
+[0m14:43:16.307690 [debug] [MainThread]: 1602: parser fallback to jinja rendering on bq_ga4_shop/uploaded_shop_contains_3.sql
+[0m14:43:16.412176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '54941680-aa30-4ab7-a378-cb658df0efb5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a69f0d0>]}
+[0m14:43:16.419767 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '54941680-aa30-4ab7-a378-cb658df0efb5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3caf10>]}
+[0m14:43:16.420069 [info ] [MainThread]: Found 5 models, 11 tests, 0 snapshots, 0 analyses, 452 macros, 0 operations, 1 seed file, 2 sources, 0 exposures, 0 metrics
+[0m14:43:16.420329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '54941680-aa30-4ab7-a378-cb658df0efb5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a609bb0>]}
+[0m14:43:16.421323 [info ] [MainThread]: 
+[0m14:43:16.422653 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:43:16.423579 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_shopkasatriavn'
+[0m14:43:16.424022 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:43:18.080558 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_shopkasatriavn_staging'
+[0m14:43:18.082075 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_shopkasatriavn_analytics_270502330'
+[0m14:43:18.082837 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:43:18.083347 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:43:18.709264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '54941680-aa30-4ab7-a378-cb658df0efb5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a4704c0>]}
+[0m14:43:18.710502 [info ] [MainThread]: Concurrency: 7 threads (target='dev')
+[0m14:43:18.711008 [info ] [MainThread]: 
+[0m14:43:18.716741 [debug] [Thread-1  ]: Began running node model.demo_dbt.bq_ga4_shop
+[0m14:43:18.717163 [debug] [Thread-2  ]: Began running node model.demo_dbt.uploaded_shop
+[0m14:43:18.717631 [debug] [Thread-3  ]: Began running node model.demo_dbt.uploaded_shop_contains_3
+[0m14:43:18.718157 [info ] [Thread-1  ]: 1 of 3 START sql table model staging.bq_ga4_shop ............................... [RUN]
+[0m14:43:18.718732 [info ] [Thread-2  ]: 2 of 3 START sql table model staging.uploaded_shop ............................. [RUN]
+[0m14:43:18.719309 [info ] [Thread-3  ]: 3 of 3 START sql table model staging.uploaded_shop_contains_3 .................. [RUN]
+[0m14:43:18.720307 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.demo_dbt.bq_ga4_shop'
+[0m14:43:18.720932 [debug] [Thread-2  ]: Acquiring new bigquery connection 'model.demo_dbt.uploaded_shop'
+[0m14:43:18.721482 [debug] [Thread-3  ]: Acquiring new bigquery connection 'model.demo_dbt.uploaded_shop_contains_3'
+[0m14:43:18.721802 [debug] [Thread-1  ]: Began compiling node model.demo_dbt.bq_ga4_shop
+[0m14:43:18.722104 [debug] [Thread-2  ]: Began compiling node model.demo_dbt.uploaded_shop
+[0m14:43:18.722365 [debug] [Thread-3  ]: Began compiling node model.demo_dbt.uploaded_shop_contains_3
+[0m14:43:18.728735 [debug] [Thread-2  ]: Writing injected SQL for node "model.demo_dbt.uploaded_shop"
+[0m14:43:18.731394 [debug] [Thread-3  ]: Writing injected SQL for node "model.demo_dbt.uploaded_shop_contains_3"
+[0m14:43:18.739007 [debug] [Thread-1  ]: Writing injected SQL for node "model.demo_dbt.bq_ga4_shop"
+[0m14:43:18.739295 [debug] [Thread-2  ]: Timing info for model.demo_dbt.uploaded_shop (compile): 2023-04-24 14:43:18.725492 => 2023-04-24 14:43:18.739224
+[0m14:43:18.739497 [debug] [Thread-3  ]: Timing info for model.demo_dbt.uploaded_shop_contains_3 (compile): 2023-04-24 14:43:18.729024 => 2023-04-24 14:43:18.739470
+[0m14:43:18.739742 [debug] [Thread-2  ]: Began executing node model.demo_dbt.uploaded_shop
+[0m14:43:18.739977 [debug] [Thread-3  ]: Began executing node model.demo_dbt.uploaded_shop_contains_3
+[0m14:43:18.740140 [debug] [Thread-1  ]: Timing info for model.demo_dbt.bq_ga4_shop (compile): 2023-04-24 14:43:18.722561 => 2023-04-24 14:43:18.740109
+[0m14:43:18.753567 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m14:43:18.755716 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m14:43:18.756033 [debug] [Thread-1  ]: Began executing node model.demo_dbt.bq_ga4_shop
+[0m14:43:18.759332 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:43:19.454806 [debug] [Thread-2  ]: Writing runtime sql for node "model.demo_dbt.uploaded_shop"
+[0m14:43:19.457073 [debug] [Thread-1  ]: Writing runtime sql for node "model.demo_dbt.bq_ga4_shop"
+[0m14:43:19.458000 [debug] [Thread-3  ]: Writing runtime sql for node "model.demo_dbt.uploaded_shop_contains_3"
+[0m14:43:19.458976 [debug] [Thread-2  ]: On model.demo_dbt.uploaded_shop: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "demo_oauth_analytics_270502330", "target_name": "dev", "node_id": "model.demo_dbt.uploaded_shop"} */
+
+  
+    
+
+    create or replace table `shopkasatriavn`.`staging`.`uploaded_shop`
+    
+    
+    OPTIONS()
+    as (
+      with cte1 as (
+    select * from `shopkasatriavn`.`analytics_270502330`.`uploaded`
+)
+
+select *, '54941680-aa30-4ab7-a378-cb658df0efb5' as invocation_id from cte1
+    );
+  
+[0m14:43:19.459191 [debug] [Thread-3  ]: On model.demo_dbt.uploaded_shop_contains_3: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "demo_oauth_analytics_270502330", "target_name": "dev", "node_id": "model.demo_dbt.uploaded_shop_contains_3"} */
+
+  
+    
+
+    create or replace table `shopkasatriavn`.`staging`.`uploaded_shop_contains_3`
+    
+    
+    OPTIONS()
+    as (
+      with cte1 as (
+    select * from `shopkasatriavn`.`analytics_270502330`.`uploaded`
+),
+
+cte2 as(
+    select 
+        col1,col2,col3,
+        if(cte1.col3 = CAST('3' as INT64), 'Yes','No') as is_contains_3
+    from
+        cte1
+
+)
+
+select * from cte2
+    );
+  
+[0m14:43:19.459385 [debug] [Thread-1  ]: On model.demo_dbt.bq_ga4_shop: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "demo_oauth_analytics_270502330", "target_name": "dev", "node_id": "model.demo_dbt.bq_ga4_shop"} */
+
+  
+    
+
+    create or replace table `shopkasatriavn`.`staging`.`bq_ga4_shop`
+    
+    
+    OPTIONS()
+    as (
+      -- create a view with configured source and destination in dbt_project.yml
+with shopkasatria_test as (
+    select * from `shopkasatriavn`.`analytics_270502330`.`dbt_demo`
+),
+final as (
+    select * from shopkasatria_test
+)
+
+select * from final
+    );
+  
+[0m14:43:22.475002 [debug] [Thread-2  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=shopkasatriavn&j=bq:US:66c312a6-c3b3-4156-ad29-567c1f3fd228&page=queryresults
+[0m14:43:22.478738 [debug] [Thread-2  ]: On model.demo_dbt.uploaded_shop: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "demo_oauth_analytics_270502330", "target_name": "dev", "node_id": "model.demo_dbt.uploaded_shop"} */
+
+        insert into  `shopkasatriavn.staging.dbt_audit`(audit_type)
+    values('model-end');
+      
+[0m14:43:22.515262 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=shopkasatriavn&j=bq:US:9b1a9521-d3dc-4e95-ba60-797815f8a71b&page=queryresults
+[0m14:43:22.518670 [debug] [Thread-1  ]: On model.demo_dbt.bq_ga4_shop: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "demo_oauth_analytics_270502330", "target_name": "dev", "node_id": "model.demo_dbt.bq_ga4_shop"} */
+
+        insert into  `shopkasatriavn.staging.dbt_audit`(audit_type)
+    values('model-end');
+      
+[0m14:43:22.761873 [debug] [Thread-3  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=shopkasatriavn&j=bq:US:daddef30-ea8d-41c4-8800-cfc9885e4dda&page=queryresults
+[0m14:43:22.766500 [debug] [Thread-3  ]: On model.demo_dbt.uploaded_shop_contains_3: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "demo_oauth_analytics_270502330", "target_name": "dev", "node_id": "model.demo_dbt.uploaded_shop_contains_3"} */
+
+        insert into  `shopkasatriavn.staging.dbt_audit`(audit_type)
+    values('model-end');
+      
+[0m14:43:24.973831 [debug] [Thread-2  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=shopkasatriavn&j=bq:US:ce28d232-53ac-4d76-a915-f7451551f1fe&page=queryresults
+[0m14:43:24.998536 [debug] [Thread-2  ]: Timing info for model.demo_dbt.uploaded_shop (execute): 2023-04-24 14:43:18.740287 => 2023-04-24 14:43:24.998447
+[0m14:43:24.999610 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '54941680-aa30-4ab7-a378-cb658df0efb5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a82ec10>]}
+[0m14:43:25.000193 [info ] [Thread-2  ]: 2 of 3 OK created sql table model staging.uploaded_shop ........................ [[32mCREATE TABLE (1.0 rows, 24.0 Bytes processed)[0m in 6.28s]
+[0m14:43:25.001969 [debug] [Thread-2  ]: Finished running node model.demo_dbt.uploaded_shop
+[0m14:43:25.112252 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=shopkasatriavn&j=bq:US:d58bb2d3-5816-4282-8efe-ea83e0931afc&page=queryresults
+[0m14:43:25.114576 [debug] [Thread-1  ]: Timing info for model.demo_dbt.bq_ga4_shop (execute): 2023-04-24 14:43:18.757688 => 2023-04-24 14:43:25.114508
+[0m14:43:25.115501 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '54941680-aa30-4ab7-a378-cb658df0efb5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a835460>]}
+[0m14:43:25.116085 [info ] [Thread-1  ]: 1 of 3 OK created sql table model staging.bq_ga4_shop .......................... [[32mCREATE TABLE (56.0 rows, 50.5 KB processed)[0m in 6.40s]
+[0m14:43:25.116653 [debug] [Thread-1  ]: Finished running node model.demo_dbt.bq_ga4_shop
+[0m14:43:25.149126 [debug] [Thread-3  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=shopkasatriavn&j=bq:US:afc5fb0f-c9f0-4a59-a45f-3b48d4f98db3&page=queryresults
+[0m14:43:25.151133 [debug] [Thread-3  ]: Timing info for model.demo_dbt.uploaded_shop_contains_3 (execute): 2023-04-24 14:43:18.753759 => 2023-04-24 14:43:25.151066
+[0m14:43:25.152089 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '54941680-aa30-4ab7-a378-cb658df0efb5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a777970>]}
+[0m14:43:25.152649 [info ] [Thread-3  ]: 3 of 3 OK created sql table model staging.uploaded_shop_contains_3 ............. [[32mCREATE TABLE (1.0 rows, 24.0 Bytes processed)[0m in 6.43s]
+[0m14:43:25.153165 [debug] [Thread-3  ]: Finished running node model.demo_dbt.uploaded_shop_contains_3
+[0m14:43:25.156237 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:43:25.157052 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:43:25.157315 [debug] [MainThread]: Connection 'model.demo_dbt.bq_ga4_shop' was properly closed.
+[0m14:43:25.157530 [debug] [MainThread]: Connection 'model.demo_dbt.uploaded_shop' was properly closed.
+[0m14:43:25.157728 [debug] [MainThread]: Connection 'model.demo_dbt.uploaded_shop_contains_3' was properly closed.
+[0m14:43:25.158005 [info ] [MainThread]: 
+[0m14:43:25.158383 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 8.74 seconds (8.74s).
+[0m14:43:25.158988 [debug] [MainThread]: Command end result
+[0m14:43:25.170993 [info ] [MainThread]: 
+[0m14:43:25.171590 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:43:25.171930 [info ] [MainThread]: 
+[0m14:43:25.172253 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m14:43:25.172697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6af5e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3ac790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a69fb80>]}
+[0m14:43:25.173033 [debug] [MainThread]: Flushing usage events

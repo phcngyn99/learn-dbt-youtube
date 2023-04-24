@@ -25,7 +25,7 @@ snapshot-paths: ["snapshots"]
 target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
   - "target"
-  - "dbt_packages"
+#  - "dbt_packages"
 
 #Hooks
 #on-run-start: "insert into  `shopkasatriavn.staging.dbt_audit`(audit_type) values('on-start');"
@@ -49,3 +49,4 @@ models:
     bq_ga4_shop:
       +materialized: table #make it a table
       +schema: staging #default: schema name in schema.yml + name , custom: name only, edit in marcos dir
+      +tags: p1 #priority 1
